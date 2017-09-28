@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AdaTvLauncher</string>
+    <string name="str_default_city">shenzhen</string>
+    <string name="launcher_menu_media">Multi-Media</string>
+    <string name="launcher_menu_teaching">Whiteboard Teaching</string>
+    <string name="launcher_menu_teaching_resources">Teaching resources</string>
+    <string name="launcher_menu_all_app">All applications</string>
+    <string name="launcher_menu_browser">Browser</string>
+    <string name="launcher_menu_book">WPS Office</string>
+    <string name="launcher_menu_setting">Setting</string>
+    <string name="str_weather_network_error">Weather data access failed. Please check network！</string>
+    <string name="str_weather_data_error">Data parsing error！</string>
+    <string name="degree">&#176;</string>
+    <string name="noAPP">No application installed!</string>
+    <string name="no_signal">No signal</string>
+    <string name="please_selecte_signal">Please select the signal source</string>
+    <string name="no_app">This application is not installed!</string>
+
+</resources>

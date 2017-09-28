@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x60dp"
+    android:layout_height="@dimen/x75dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/x4dp">
+
+    <RelativeLayout
+        android:layout_width="@dimen/x65dp"
+        android:layout_height="@dimen/x65dp"
+        android:layout_gravity="center_horizontal|top">
+
+        <ImageView
+            android:id="@+id/appicon"
+            android:layout_width="@dimen/x65dp"
+            android:layout_height="@dimen/x65dp"
+
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/remoappicon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/apptitle"
+        android:layout_width="@dimen/x81dp"
+        android:layout_height="@dimen/x38dp"
+        android:ellipsize="marquee"
+        android:gravity="center_horizontal|center_vertical"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textColor="#FFFF" />
+
+</LinearLayout>
