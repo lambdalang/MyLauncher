@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="linear_menu_big">90</integer>
+    <integer name="linear_menu">75</integer>
+    <integer name="videoWindowType_dimen_width">477</integer>
+    <integer name="videoWindowType_dimen_height">267</integer>
+    <integer name="videoWindowType_dimen_x">646</integer>
+    <integer name="videoWindowType_dimen_y">125</integer>
+</resources>

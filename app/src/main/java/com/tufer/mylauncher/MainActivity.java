@@ -58,6 +58,7 @@ import com.mstar.android.tvapi.common.vo.EnumScalerWindow;
 import com.mstar.android.tvapi.common.vo.VideoWindowType;
 import com.tufer.mylauncher.utils.NetworkChangedManager;
 import com.tufer.mylauncher.utils.ResumeToSourceGlobal;
+import com.tufer.mylauncher.utils.SDcardBroadcastReceiver;
 import com.tufer.mylauncher.utils.SPUtils;
 import com.tufer.mylauncher.utils.Util;
 import com.tufer.mylauncher.utils.WifiAdmin;
@@ -84,19 +85,21 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
      * Called when the activity is first created.
      */
     private static String TAG = "MainActivity";
+    public static MainActivity mainActivity;
     public static final int UPDATA_UI = 0;
     public static final int NETWORK_ERROR = -1;
     public static final int DATA_ERROR = -2;
     public static final int UPDATA_CITY = 2;
     public static final int UPDATA_WEATHER = 3;
+    public static final int UPDATA_USB_GONE = 4;
+    public static final int UPDATA_USB_VISIBLE = 5;
 
     private final static String USB_ACTION = "android.hardware.usb.action.USB_STATE";
     private final static String WIFI_ACTION = "WifiManager.WIFI_STATE_CHANGED_ACTION";
 
+
     private WifiAdmin mwAdmin;// wifi management
-    /*  */
-    /* USB Broadcast */
-    private SDcardBroadcastReceiver usbRec;
+
     private static networkBroadcastReceiver networkRec;
     private int netWorkType;
     private int level;
@@ -110,8 +113,6 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
     private TextView launcherWeatherCity;
     private ImageView launcherWeatherImg;
     private TextView launcherWeatherTemperature;
-    //    private LinearLayout launcherTv;
-//    private Button launcherTvInfo;
     private LinearLayout linearlayoutMedia;
     private LinearLayout linearlayoutTeaching;
     private LinearLayout linearlayoutTeachingResources;
@@ -143,7 +144,11 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
 
     private TextView No_Signal_textview;
     private TextView TV_inputSourceType;
-    private int inputSource=-1;
+    private int inputSource = -1;
+
+
+    DisplayMetrics dm;
+    float density;    // 屏幕密度（像素比例：0.75/1.0/1.5/2.0）
 
 
     private int[] weatherCondIcon = {R.drawable.baoxue, R.drawable.baoyu, R.drawable.baoyuzhuandabaoyu,
@@ -159,13 +164,13 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
             R.drawable.zhongyu, R.drawable.zhongyuzhuandayu};
 
     private int[][] videoWindowCoordinate = {
-            {1042,660,1770,940},  //3840*2160 density=240
-            {377,228,362,838},     //1680*1050 invalid value, waiting for debug
-            {377,228,362,838},     //1600*900  invalid value, waiting for debug
-            {397,268,424,884},     //1440*900
-            {377,228,362,838},     //1280*800  invalid value, waiting for debug
-            {377,228,362,838},     //1280*1024 invalid value, waiting for debug
-            {377,228,362,838},     //1024*768  invalid value, waiting for debug
+            {1042, 660, 1770, 940},  //3840*2160 density=240
+            {377, 228, 362, 838},     //1680*1050 invalid value, waiting for debug
+            {377, 228, 362, 838},     //1600*900  invalid value, waiting for debug
+            {397, 268, 424, 884},     //1440*900
+            {377, 228, 362, 838},     //1280*800  invalid value, waiting for debug
+            {377, 228, 362, 838},     //1280*1024 invalid value, waiting for debug
+            {377, 228, 362, 838},     //1024*768  invalid value, waiting for debug
     };
 
     /**
@@ -175,7 +180,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
      * (http://www.buzzingandroid.com/tools/android-layout-finder)
      */
 
-    private Handler handler = new Handler() {
+    public Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
             switch (msg.what) {
@@ -200,6 +205,12 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
                     m.find();
                     launcherWeatherTemperature.setText(m.group() + "~" + d.group() + getString(R.string.degree) + "C");
                     break;
+                case UPDATA_USB_GONE:
+                    launcherUsb.setVisibility(View.GONE);
+                    break;
+                case UPDATA_USB_VISIBLE:
+                    launcherUsb.setVisibility(View.VISIBLE);
+                    break;
             }
             super.handleMessage(msg);
         }
@@ -213,12 +224,12 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
             if (b) {
                 Log.d(TAG, linearLayout.getChildAt(0).getWidth() + "");
                 Log.d(TAG, linearLayout.getChildAt(0).getHeight() + "");
-                para.width = 135;
-                para.height = 135;
+                para.width = (int) (getResources().getInteger(R.integer.linear_menu_big) * density + 0.5f);
+                para.height = (int) (getResources().getInteger(R.integer.linear_menu_big) * density + 0.5f);
                 linearLayout.getChildAt(0).setLayoutParams(para);
             } else {
-                para.width = 113;
-                para.height = 113;
+                para.width = (int) (getResources().getInteger(R.integer.linear_menu) * density + 0.5f);
+                para.height = (int) (getResources().getInteger(R.integer.linear_menu) * density + 0.5f);
                 linearLayout.getChildAt(0).setLayoutParams(para);
                 linearLayout.setFocusableInTouchMode(false);
             }
@@ -396,7 +407,10 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
         setContentView(R.layout.activity_main);
         findViews();
         NetworkChangedManager.getInstence().addNetworkListener(this);
+        dm = getResources().getDisplayMetrics();
+        density = dm.density;    // 屏幕密度（像素比例：0.75/1.0/1.5/2.0）
         mwAdmin = new WifiAdmin(this);
+        mainActivity = this;
         getData();
         registerReceiver();
         setFocus();
@@ -419,9 +433,6 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
 
     @Override
     protected void onDestroy() {
-        if (usbRec != null) {
-            unregisterReceiver(usbRec);
-        }
         if (networkRec != null) {
             unregisterReceiver(networkRec);
         }
@@ -453,28 +464,8 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
         switch (keyCode) {
             case KeyEvent.KEYCODE_BACK:
                 return false;
-//            case KeyEvent.KEYCODE_DPAD_DOWN:
-//            case KeyEvent.KEYCODE_DPAD_LEFT:
-//            case KeyEvent.KEYCODE_DPAD_RIGHT:
-//            case KeyEvent.KEYCODE_DPAD_UP:
-//                if (!isFocus()) {
-//                    RL_tv.requestFocus();
-//                }
-//                break;
-//            default:
-//                break;
         }
         return super.onKeyDown(keyCode, event);
-    }
-
-    private boolean isFocus() {
-        if (RL_tv.hasFocus()|| linearlayoutMedia.hasFocus() ||
-                linearlayoutTeaching.hasFocus() || linearlayoutTeachingResources.hasFocus() ||
-                linearlayoutAllApp.hasFocus() || linearlayoutBrowser.hasFocus() ||
-                linearlayoutBook.hasFocus() || linearlayoutSetting.hasFocus()) {
-            return true;
-        }
-        return false;
     }
 
     private void setFocus() {
@@ -516,7 +507,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
             //launcherWifi.setVisibility(View.VISIBLE);
             launcherNetwork.setVisibility(View.GONE);
         }
-        //launcherUsb.setVisibility(Util.USBExist(this)?View.VISIBLE:View.GONE);
+        launcherUsb.setVisibility(SDcardBroadcastReceiver.isVisible ? View.VISIBLE : View.GONE);
     }
 
     private String getDate() {
@@ -537,41 +528,20 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
         networkFilter.addAction(ConnectivityManager.CONNECTIVITY_ACTION);
         registerReceiver(networkRec, networkFilter);
 
-        usbRec = new SDcardBroadcastReceiver();
-        IntentFilter usbFilter = new IntentFilter(Intent.ACTION_MEDIA_MOUNTED);
-        usbFilter.addAction(Intent.ACTION_MEDIA_UNMOUNTED);
-        usbFilter.addAction(Intent.ACTION_MEDIA_REMOVED);
-        usbFilter.addAction(Intent.ACTION_MEDIA_EJECT);
-        usbFilter.addDataScheme("file");
-        registerReceiver(usbRec, usbFilter);
-
         IntentFilter wifiFilter = new IntentFilter(WifiManager.WIFI_STATE_CHANGED_ACTION);
         registerReceiver(wifiRec, wifiFilter);
     }
 
     @Override
     public void onFocusChange(View view, boolean b) {
-        if(b){
+        if (b) {
             view.setBackgroundResource(R.drawable.ic_ui_main_select_big_tv_ye);
-        }else{
+        } else {
             view.setBackgroundResource(0);
             view.setFocusableInTouchMode(false);
         }
     }
 
-    private class SDcardBroadcastReceiver extends BroadcastReceiver {
-
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            if (intent.getAction().equals(Intent.ACTION_MEDIA_EJECT)) {
-                launcherUsb.setVisibility(View.GONE);
-            } else if (intent.getAction().equals(Intent.ACTION_MEDIA_MOUNTED)) {
-                //USB设备挂载，更新UI
-                launcherUsb.setVisibility(View.VISIBLE);
-            }
-            //showUpan();
-        }
-    }
 
     public int CondIcon(String getWeatherCond, Context context) {
         String[] weatherCond = context.getResources().getStringArray(R.array.weather);
@@ -601,6 +571,11 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
                 isLauncherJumpToMTvPlayer();
                 break;
             case R.id.linearlayout_media:
+                if (isAvilible("com.jrm.localmm")) {
+                    startApp("com.jrm.localmm");
+                } else {
+                    Toast.makeText(this, R.string.no_app, Toast.LENGTH_SHORT).show();
+                }
                 break;
             case R.id.linearlayout_teaching:
                 break;
@@ -611,30 +586,43 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
                 startActivity(intent);
                 break;
             case R.id.linearlayout_browser:
-                if(isAvilible("com.android.browser")){
-                    PackageManager manager = getPackageManager();
-                    intent = manager.getLaunchIntentForPackage("com.android.browser");
-                    startActivity(intent);
-                }else{
-                    Toast.makeText(this,R.string.no_app,Toast.LENGTH_SHORT).show();
+                if (isAvilible("com.android.browser")) {
+                    startApp("com.android.browser");
+                } else {
+                    Toast.makeText(this, R.string.no_app, Toast.LENGTH_SHORT).show();
                 }
                 break;
             case R.id.linearlayout_book:
+                if (isAvilible("cn.wps.moffice_eng")) {
+                    startApp("cn.wps.moffice_eng");
+                } else {
+                    Toast.makeText(this, R.string.no_app, Toast.LENGTH_SHORT).show();
+                }
+
                 break;
             case R.id.linearlayout_setting:
-                if(isAvilible("tufer.com.menutest")){
-                    PackageManager manager = getPackageManager();
-                    intent = manager.getLaunchIntentForPackage("tufer.com.menutest");
-                    startActivity(intent);
-                }else{
-                    Toast.makeText(this,R.string.no_app,Toast.LENGTH_SHORT).show();
+                if (isAvilible("tufer.com.menutest")) {
+                    startApp("tufer.com.menutest");
+                } else if (isAvilible("com.android.tv.settings")) {
+                    startApp("com.android.tv.settings");
+                } else {
+                    Toast.makeText(this, R.string.no_app, Toast.LENGTH_SHORT).show();
                 }
                 break;
         }
     }
 
+    private void startApp(String name){
+        Intent intent = new Intent();
+        PackageManager manager = getPackageManager();
+        intent = manager.getLaunchIntentForPackage(name);
+        startActivity(intent);
+    }
+
+
     /**
      * 检查是否安装了指定的软件
+     *
      * @param packageName
      * @return
      */
@@ -763,7 +751,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
     }
 
     private void isLauncherJumpToMTvPlayer() {
-        if(isAvilible("com.mstar.tv.tvplayer.ui")){
+        if (isAvilible("com.mstar.tv.tvplayer.ui")) {
             Log.d(TAG, "isLauncherJumpToMTvPlayer() " + "start");
             TvCommonManager.getInstance().setInputSource(toChangeInputSource);
             ComponentName componentName = null;
@@ -775,8 +763,8 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK
                     | Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
             startActivity(intent);
-        }else{
-            Toast.makeText(this,R.string.no_app,Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, R.string.no_app, Toast.LENGTH_SHORT).show();
         }
 
     }
@@ -831,13 +819,11 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
 
             VideoWindowType videoWindowType = new VideoWindowType();
             screenname = TvManager.getInstance().getSystemPanelName();
-            DisplayMetrics dm = getResources().getDisplayMetrics();
-            float density  = dm.density;        // 屏幕密度（像素比例：0.75/1.0/1.5/2.0）
             //set other HD panel videoWindow ,only adaptation 1440*900 panel
-            videoWindowType.x = (int) (getResources().getInteger(R.integer.videoWindowType_dimen_x)*density+0.5f);
-            videoWindowType.y = (int) (getResources().getInteger(R.integer.videoWindowType_dimen_y)*density+0.5f);
-            videoWindowType.height = (int) (getResources().getInteger(R.integer.videoWindowType_dimen_height)*density+0.5f);
-            videoWindowType.width = (int) (getResources().getInteger(R.integer.videoWindowType_dimen_width)*density+0.5f);
+            videoWindowType.x = (int) (getResources().getInteger(R.integer.videoWindowType_dimen_x) * density + 0.5f);
+            videoWindowType.y = (int) (getResources().getInteger(R.integer.videoWindowType_dimen_y) * density + 0.5f);
+            videoWindowType.height = (int) (getResources().getInteger(R.integer.videoWindowType_dimen_height) * density + 0.5f);
+            videoWindowType.width = (int) (getResources().getInteger(R.integer.videoWindowType_dimen_width) * density + 0.5f);
 //            if (screenname.equals("FullHD_CMO216_H1L01")) {
 //                //if(mIspanelResolutionIndex ==3){
 //                videoWindowType.x = getResources().getInteger(R.integer.videoWindowType_dimen_x);
@@ -891,7 +877,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
         try {
             VideoWindowType videoWindowType = new VideoWindowType();
             /*
-			 * int[] location = new int[2];
+             * int[] location = new int[2];
 			 * No_Signal_textview.getLocationOnScreen(location);
 			 * videoWindowType.x = location[0];// x 529 videoWindowType.y =
 			 * location[1];// y 321 videoWindowType.height =
@@ -1070,7 +1056,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
             MyTask myTask = new MyTask();
             myTask.execute(toChangeInputSource, null,
                     inputname());
-            inputSource=myTask.getTvSourceType();
+            inputSource = myTask.getTvSourceType();
 
 
         }

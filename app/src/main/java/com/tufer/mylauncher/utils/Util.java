@@ -6,6 +6,7 @@ import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.storage.StorageManager;
 import android.os.storage.StorageVolume;
@@ -23,6 +24,8 @@ import com.tufer.mylauncher.MainActivity;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -223,43 +226,6 @@ public class Util {
         return json;
     }
 
-    public static boolean USBExist(Context context) {
-        boolean ret = false;
-        StorageManager storageManager = (StorageManager) context
-                .getSystemService(Context.STORAGE_SERVICE);
-
-        if (storageManager == null) {
-            Log.e(TAG, "Invalid reference to StorageManager received.");
-            return ret;
-        }
-
-        try {
-            if (storageManager.getVolumeState(getUSBPath(context)).equals(
-                    android.os.Environment.MEDIA_MOUNTED)) {
-                ret = true;
-            }
-        } catch (Exception e) {
-            Log.e(TAG, e.toString());
-        }
-
-        return ret;
-    }
-
-    public static String getUSBPath(Context context) {
-        String usb = null;
-        StorageManager storageManager = (StorageManager) context
-                .getSystemService(Context.STORAGE_SERVICE);
-        StorageVolume[] volumes = storageManager.getVolumeList();
-
-        for (int i = 0; i < volumes.length; i++) {
-
-            if (volumes[i].isRemovable() && volumes[i].allowMassStorage()
-                    && volumes[i].getDescription(context).contains("USB")) {
-                usb = volumes[i].getPath();
-            }
-        }
-        return usb;
-    }
 
     public static final int NETWORN_NONE = 0;
     public static final int NETWORN_WIFI = 1;
@@ -314,6 +280,41 @@ public class Util {
         final List<ResolveInfo> listApp = listApps;
         return listApp;
     }
+
+//    private boolean isSDMounted(Context context) {
+//        boolean isMounted = false;
+//        StorageManager sm = (StorageManager) context.getSystemService(Context.STORAGE_SERVICE);
+//
+//        try {
+//            Method getVolumList = StorageManager.class.getMethod("getVolumeList", null);
+//            getVolumList.setAccessible(true);
+//            Object[] results = (Object[])getVolumList.invoke(sm, null);
+//            if (results != null) {
+//                for (Object result : results) {
+//                    Method mRemoveable = result.getClass().getMethod("isRemovable", null);
+//                    Boolean isRemovable = (Boolean) mRemoveable.invoke(result, null);
+//                    if (isRemovable) {
+//                        Method getPath = result.getClass().getMethod("getPath", null);
+//                        String path = (String) mRemoveable.invoke(result, null);
+//                        Method getState = sm.getClass().getMethod("getVolumeState", String.class);
+//                        String state = (String)getState.invoke(sm, path);
+//                        if (state.equals(Environment.MEDIA_MOUNTED)) {
+//                            isMounted = true;
+//                            break;
+//                        }
+//                    }
+//                }
+//            }
+//        } catch (NoSuchMethodException e){
+//            e.printStackTrace();
+//        } catch (IllegalAccessException e){
+//            e.printStackTrace();
+//        } catch (InvocationTargetException e) {
+//            e.printStackTrace();
+//        }
+//
+//        return isMounted;
+//    }
 
 
 }

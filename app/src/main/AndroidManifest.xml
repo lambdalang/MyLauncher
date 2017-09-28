@@ -86,6 +86,17 @@
         </activity>
         <activity android:name=".AllApplicationActivity"
             android:launchMode="singleTask"/>
+
+        <receiver android:name=".utils.SDcardBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_REMOVED"/>
+                <action android:name="android.intent.action.MEDIA_EJECT"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>

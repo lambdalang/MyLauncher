@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="5dp"
-            android:src="@drawable/launcher_thermometer" />
+            android:src="@drawable/wendu3" />
 
     </LinearLayout>
 
@@ -120,16 +120,17 @@
         </LinearLayout>
 
         <RelativeLayout
-            android:layout_width="400dp"
-            android:layout_height="265dp"
-            android:layout_marginLeft="230dp"
+            android:layout_width="480dp"
+            android:layout_height="310dp"
+            android:layout_marginLeft="190dp"
             android:gravity="center"
+            android:layout_marginTop="-15dp"
             android:orientation="vertical">
 
             <RelativeLayout
                 android:id="@+id/RL_tv"
-                android:layout_width="400dp"
-                android:layout_height="225dp"
+                android:layout_width="480dp"
+                android:layout_height="270dp"
                 android:nextFocusDown="@+id/linearlayout_all_app"
                 android:nextFocusLeft="@+id/RL_tv"
                 android:nextFocusRight="@+id/RL_tv">

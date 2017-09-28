@@ -8,10 +8,6 @@
     <dimen name="launcher_menu_height">75dp</dimen>
     <dimen name="launcher_menu_linearlayout_width">100dp</dimen>
     <dimen name="launcher_menu_linearlayout_height">120dp</dimen>
-    <integer name="videoWindowType_dimen_width">400</integer>
-    <integer name="videoWindowType_dimen_height">225</integer>
-    <integer name="videoWindowType_dimen_x">707</integer>
-    <integer name="videoWindowType_dimen_y">164</integer>
     <dimen name="x1dp">1.0dp</dimen>
     <dimen name="x2dp">2.0dp</dimen>
     <dimen name="x3dp">3.0dp</dimen>
