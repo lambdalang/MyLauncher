@@ -2,12 +2,12 @@
 <resources>
     <dimen name="launcher_menu_copy_marginleft">45dp</dimen>
     <dimen name="launcher_menu__text_marginleft">75dp</dimen>
-    <dimen name="launcher_menu__text_size">16sp</dimen>
+    <dimen name="launcher_menu__text_size">14sp</dimen>
     <dimen name="launcher_menu_marginleft">45dp</dimen>
     <dimen name="launcher_menu_copy_height">100dp</dimen>
-    <dimen name="launcher_menu_height">75dp</dimen>
-    <dimen name="launcher_menu_linearlayout_width">100dp</dimen>
-    <dimen name="launcher_menu_linearlayout_height">120dp</dimen>
+    <dimen name="launcher_menu_height">80dp</dimen>
+    <dimen name="launcher_menu_linearlayout_width">105dp</dimen>
+    <dimen name="launcher_menu_linearlayout_height">125dp</dimen>
     <dimen name="x1dp">1.0dp</dimen>
     <dimen name="x2dp">2.0dp</dimen>
     <dimen name="x3dp">3.0dp</dimen>

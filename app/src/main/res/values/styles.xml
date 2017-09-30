@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="AppTheme" parent="@style/Theme.Leanback"></style>
 
     <style name="launcher_menu_image_style">
         <item name="android:layout_width">@dimen/launcher_menu_height</item>
@@ -41,6 +40,6 @@
     <style name="first">
         <item name="android:gravity">center</item>
         <item name="android:textColor">#ffffff</item>
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">22sp</item>
     </style>
 </resources>

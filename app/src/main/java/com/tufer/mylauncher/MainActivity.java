@@ -23,6 +23,7 @@ import android.content.IntentFilter;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
+import android.graphics.Point;
 import android.net.ConnectivityManager;
 import android.net.EthernetManager;
 import android.net.NetworkInfo;
@@ -35,6 +36,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.Display;
 import android.view.KeyEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceHolder.Callback;
@@ -65,6 +67,7 @@ import com.tufer.mylauncher.utils.WifiAdmin;
 import com.tufer.mylauncher.utils.networkBroadcastReceiver;
 
 import java.io.File;
+import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -125,7 +128,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
     private ImageView launcherNetwork;
 
 
-    LinearLayout.LayoutParams para;
+    ViewGroup.LayoutParams para;
 
     private View RL_tv;
     private LinearLayout surfaceViewLayout;
@@ -149,6 +152,12 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
 
     DisplayMetrics dm;
     float density;    // 屏幕密度（像素比例：0.75/1.0/1.5/2.0）
+    float densityDpiX,densityDpiY;
+
+
+    private final static int RO_SF_LCD_DENSITY_320 = 320;
+
+    private final static int PANEL_LINK_TYPE_VB1 = 10;
 
 
     private int[] weatherCondIcon = {R.drawable.baoxue, R.drawable.baoyu, R.drawable.baoyuzhuandabaoyu,
@@ -339,66 +348,63 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
         RL_tv.setOnClickListener(this);
         RL_tv.setOnFocusChangeListener(this);
 
+        para = RL_tv.getLayoutParams();
+        Log.d(TAG, para.width + ":" + para.height);
+
+
         surfaceViewLayout = (LinearLayout) findViewById(R.id.pipview);
 //        surfaceViewLayout.setOnClickListener(this);
 
         No_Signal_textview = (TextView) findViewById(R.id.no_signal_text);
         TV_inputSourceType = (TextView) findViewById(R.id.TV_inputSourceType);
 
-//        ViewGroup.LayoutParams lp;
-//        lp=RL_tv.getLayoutParams();
-//        WindowManager wm = this.getWindowManager();
-//        int width = wm.getDefaultDisplay().getWidth();
-//        int height = wm.getDefaultDisplay().getHeight();
-//        Toast.makeText(this,lp.width+":"+lp.height+":"+width+height,Toast.LENGTH_SHORT).show();
+        getDisplayInfomation();
+        getDensity();
 
-        // 获取屏幕密度（方法1）
-//        int screenWidth  = getWindowManager().getDefaultDisplay().getWidth();       // 屏幕宽（像素，如：480px）
-//        int screenHeight = getWindowManager().getDefaultDisplay().getHeight();      // 屏幕高（像素，如：800p）
-//
-//        Log.e(TAG + "  getDefaultDisplay", "screenWidth=" + screenWidth + "; screenHeight=" + screenHeight);
-//
-//        // 获取屏幕密度（方法2）
+    }
+
+//    private boolean checkPanelTypeIsUHD() {
+//        boolean bPanelTypeIsUHD = false;
+//        int screenWidth = -1;
+//        int screenHeight = -1;
+//        int panelLinkType = -1;
+//        try {
+//            screenWidth = TvManager.getInstance().getPanelIniInfo("panel:m_wPanelWidth");
+//            screenHeight = TvManager.getInstance().getPanelIniInfo("panel:m_wPanelHeight");
+//            panelLinkType = TvManager.getInstance().getPanelIniInfo("panel:m_ePanelLinkType");
+//        } catch (TvCommonException e) {
+//            //TODO Auto-generated catch block
+//            e.printStackTrace();
+//        }
+//        // Log.d(TAG, "PanelWidth :" + screenWidth + "   PanelHeight :" + screenHeight);
+//        //WindowManager windowManager = getWindowManager();
+//        Display display = getWindowManager().getDefaultDisplay();
+//        Log.d(TAG, "x and y :" + display.getWidth() + "x" + display.getHeight());
 //        DisplayMetrics dm = new DisplayMetrics();
-//        dm = getResources().getDisplayMetrics();
-//
-//        float density  = dm.density;        // 屏幕密度（像素比例：0.75/1.0/1.5/2.0）
-//        int densityDPI = dm.densityDpi;     // 屏幕密度（每寸像素：120/160/240/320）
-//        float xdpi = dm.xdpi;
-//        float ydpi = dm.ydpi;
-//
-//        Log.e(TAG + "  DisplayMetrics", "xdpi=" + xdpi + "; ydpi=" + ydpi);
-//        Log.e(TAG + "  DisplayMetrics", "density=" + density + "; densityDPI=" + densityDPI);
-//
-//        screenWidth  = dm.widthPixels;      // 屏幕宽（像素，如：480px）
-//        screenHeight = dm.heightPixels;     // 屏幕高（像素，如：800px）
-//
-//        Log.e(TAG + "  DisplayMetrics(111)", "screenWidth=" + screenWidth + "; screenHeight=" + screenHeight);
-//
-//
-//
-//// 获取屏幕密度（方法3）
-//        dm = new DisplayMetrics();
 //        getWindowManager().getDefaultDisplay().getMetrics(dm);
-//
-//        density  = dm.density;      // 屏幕密度（像素比例：0.75/1.0/1.5/2.0）
-//        densityDPI = dm.densityDpi;     // 屏幕密度（每寸像素：120/160/240/320）
-//        xdpi = dm.xdpi;
-//        ydpi = dm.ydpi;
-//
-//        Log.e(TAG + "  DisplayMetrics", "xdpi=" + xdpi + "; ydpi=" + ydpi);
-//        Log.e(TAG + "  DisplayMetrics", "density=" + density + "; densityDPI=" + densityDPI);
-//
-//        int screenWidthDip = dm.widthPixels;        // 屏幕宽（dip，如：320dip）
-//        int screenHeightDip = dm.heightPixels;      // 屏幕宽（dip，如：533dip）
-//
-//        Log.e(TAG + "  DisplayMetrics(222)", "screenWidthDip=" + screenWidthDip + "; screenHeightDip=" + screenHeightDip);
-//
-//        screenWidth  = (int)(dm.widthPixels * density + 0.5f);      // 屏幕宽（px，如：480px）
-//        screenHeight = (int)(dm.heightPixels * density + 0.5f);     // 屏幕高（px，如：800px）
-//
-//        Log.e(TAG + "  DisplayMetrics(222)", "screenWidth=" + screenWidth + "; screenHeight=" + screenHeight);
+//        //int densityDpi = dm.densityDpi;
+//        densityDpiX=dm.xdpi;
+//        densityDpiY=dm.ydpi;
+//        Log.d(TAG, "densityDpiX :" + densityDpiX+"    densityDpiY :" + densityDpiY);
+//        if ((screenWidth == 3840) && (screenHeight == 2160) && (panelLinkType == PANEL_LINK_TYPE_VB1)
+//                && (densityDpi == RO_SF_LCD_DENSITY_320)) {
+//            bPanelTypeIsUHD = true;
+//        }
+//        return bPanelTypeIsUHD;
+//    }
 
+    private void getDisplayInfomation() {
+        Point point = new Point();
+        getWindowManager().getDefaultDisplay().getSize(point);
+        Log.d(TAG, "the screen size is " + point.toString());
+        getWindowManager().getDefaultDisplay().getRealSize(point);
+        Log.d(TAG, "the screen real size is " + point.toString());
+    }
+
+    private void getDensity() {
+        DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
+        Log.d(TAG, "Density is " + displayMetrics.density + " densityDpi is " + displayMetrics.densityDpi + " height: " + displayMetrics.heightPixels +
+                " width: " + displayMetrics.widthPixels);
     }
 
     @Override
@@ -409,6 +415,9 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
         NetworkChangedManager.getInstence().addNetworkListener(this);
         dm = getResources().getDisplayMetrics();
         density = dm.density;    // 屏幕密度（像素比例：0.75/1.0/1.5/2.0）
+        densityDpiX=dm.xdpi;
+        densityDpiY=dm.ydpi;
+        Log.d(TAG, "densityDpiX :" + densityDpiX+"    densityDpiY :" + densityDpiY);
         mwAdmin = new WifiAdmin(this);
         mainActivity = this;
         getData();
@@ -535,9 +544,9 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
     @Override
     public void onFocusChange(View view, boolean b) {
         if (b) {
-            view.setBackgroundResource(R.drawable.ic_ui_main_select_big_tv_ye);
+            view.setBackgroundResource(R.drawable.tvfocus);
         } else {
-            view.setBackgroundResource(0);
+            view.setBackgroundResource(R.drawable.tv);
             view.setFocusableInTouchMode(false);
         }
     }
@@ -612,7 +621,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
         }
     }
 
-    private void startApp(String name){
+    private void startApp(String name) {
         Intent intent = new Intent();
         PackageManager manager = getPackageManager();
         intent = manager.getLaunchIntentForPackage(name);
@@ -816,33 +825,25 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
             return;
         }
         try {
-
+            int width = 1280;//dp
+            int heigh = 720;//dp
+            int dpi=160;
             VideoWindowType videoWindowType = new VideoWindowType();
             screenname = TvManager.getInstance().getSystemPanelName();
-            //set other HD panel videoWindow ,only adaptation 1440*900 panel
-            videoWindowType.x = (int) (getResources().getInteger(R.integer.videoWindowType_dimen_x) * density + 0.5f);
-            videoWindowType.y = (int) (getResources().getInteger(R.integer.videoWindowType_dimen_y) * density + 0.5f);
-            videoWindowType.height = (int) (getResources().getInteger(R.integer.videoWindowType_dimen_height) * density + 0.5f);
-            videoWindowType.width = (int) (getResources().getInteger(R.integer.videoWindowType_dimen_width) * density + 0.5f);
-//            if (screenname.equals("FullHD_CMO216_H1L01")) {
-//                //if(mIspanelResolutionIndex ==3){
-//                videoWindowType.x = getResources().getInteger(R.integer.videoWindowType_dimen_x);
-//                videoWindowType.y = getResources().getInteger(R.integer.videoWindowType_dimen_y);
-//                videoWindowType.height = getResources().getInteger(R.integer.videoWindowType_dimen_height);
-//                videoWindowType.width = getResources().getInteger(R.integer.videoWindowType_dimen_width);
-//
-//                Log.i(TAG, ">>>>>>>>>>>>>videoWindowCoordinate<<<<<<<<<<<<<<<<<<<<<");
-//            } else if (screenname.equals("FullHD_CMO216_720P")) {
-//                videoWindowType.x = getResources().getInteger(R.integer.videoWindowType_dimen_x) / 2 + 85;
-//                videoWindowType.y = getResources().getInteger(R.integer.videoWindowType_dimen_y) / 2 + 60;
-//                videoWindowType.height = getResources().getInteger(R.integer.videoWindowType_dimen_height) - 162;
-//                videoWindowType.width = getResources().getInteger(R.integer.videoWindowType_dimen_width) - 296;
-//            } else {
-//                videoWindowType.x = getResources().getInteger(R.integer.videoWindowType_dimen_x) * 2;
-//                videoWindowType.y = getResources().getInteger(R.integer.videoWindowType_dimen_y) * 2;
-//                videoWindowType.height = getResources().getInteger(R.integer.videoWindowType_dimen_height) * 2;
-//                videoWindowType.width = getResources().getInteger(R.integer.videoWindowType_dimen_width) * 2;
-//            }
+            try {
+                int screenWidth = TvManager.getInstance().getPanelIniInfo("panel:m_wPanelWidth");//px
+                int screenHeight = TvManager.getInstance().getPanelIniInfo("panel:m_wPanelHeight");//px
+                float fx = (screenWidth/(densityDpiX/dpi))/ width;
+                float fy = (screenHeight/(densityDpiY/dpi)) / heigh;
+                videoWindowType.x = (int) (getResources().getInteger(R.integer.videoWindowType_dimen_x) * fx * (densityDpiX/dpi) + 0.5f);
+                videoWindowType.y = (int) (getResources().getInteger(R.integer.videoWindowType_dimen_y) * fy * (densityDpiY/dpi) + 0.5f);
+                videoWindowType.height = (int) (getResources().getInteger(R.integer.videoWindowType_dimen_height) * fy * (densityDpiX/dpi) + 0.5f);
+                videoWindowType.width = (int) (getResources().getInteger(R.integer.videoWindowType_dimen_width) * fx * (densityDpiY/dpi) + 0.5f);
+                Log.d(TAG,"screenWidth:"+screenWidth+"screenHeight:"+screenHeight+"fx:"+fx+"fy:"+fy);
+            } catch (TvCommonException e) {
+                //TODO Auto-generated catch block
+                e.printStackTrace();
+            }
             if (TvManager.getInstance() != null) {
                 if (TvManager.getInstance().getPictureManager() != null) {
                     TvManager.getInstance().getPictureManager()
@@ -854,7 +855,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
                     Log.i(TAG, " videoWindowType x : " + videoWindowType.x
                             + "   y : " + videoWindowType.y + "       w : "
                             + videoWindowType.width + "       h : "
-                            + videoWindowType.height);
+                            + videoWindowType.height );
                     TvManager.getInstance().getPictureManager()
                             .setDisplayWindow(videoWindowType);
                 }

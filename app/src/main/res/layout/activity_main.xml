@@ -7,21 +7,30 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="5dp">
 
         <ImageView
             android:id="@+id/launcher_thermometer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
             android:src="@drawable/wendu3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-5dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="center"
         android:orientation="horizontal">
@@ -29,7 +38,7 @@
         <LinearLayout
             android:layout_width="300dp"
             android:layout_height="300dp"
-            android:layout_marginTop="-25dp"
+            android:layout_marginTop="-15dp"
             android:gravity="center_horizontal"
             android:orientation="horizontal">
 
@@ -45,8 +54,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="12:02"
-                    android:textColor="#FFB6DD"
+                    android:textColor="@color/white"
                     android:textSize="50sp" />
 
                 <ImageView
@@ -96,7 +104,6 @@
                             android:id="@+id/launcher_weather_temperature"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="28-33C"
                             android:textColor="@color/white"
                             android:textSize="20sp" />
                     </LinearLayout>
@@ -120,17 +127,17 @@
         </LinearLayout>
 
         <RelativeLayout
-            android:layout_width="480dp"
+            android:layout_width="460dp"
             android:layout_height="310dp"
             android:layout_marginLeft="190dp"
+            android:layout_marginTop="15dp"
             android:gravity="center"
-            android:layout_marginTop="-15dp"
             android:orientation="vertical">
 
             <RelativeLayout
                 android:id="@+id/RL_tv"
-                android:layout_width="480dp"
-                android:layout_height="270dp"
+                android:layout_width="460dp"
+                android:layout_height="259dp"
                 android:nextFocusDown="@+id/linearlayout_all_app"
                 android:nextFocusLeft="@+id/RL_tv"
                 android:nextFocusRight="@+id/RL_tv">
@@ -149,7 +156,6 @@
                         android:id="@+id/no_signal_text"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/blue"
                         android:gravity="center"
                         android:text="@string/no_signal"
                         android:textSize="30sp" />
@@ -160,6 +166,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/x40dp"
                 android:layout_alignParentBottom="true"
+                android:layout_marginTop="11dp"
                 android:layout_marginBottom="0dp">
 
                 <TextView
@@ -168,7 +175,7 @@
                     android:layout_width="120dp"
                     android:layout_height="40dp"
                     android:layout_centerInParent="true"
-                    android:background="@drawable/launcher_tv_info"
+                    android:background="@drawable/sourcefocus"
                     android:text="@string/please_selecte_signal" />
             </RelativeLayout>
         </RelativeLayout>
@@ -387,10 +394,9 @@
 
         <ImageView
             android:id="@+id/launcher_wifi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_marginRight="5dp"
-            android:src="@drawable/wifi_signal_3"
             android:visibility="gone" />
 
         <ImageView
