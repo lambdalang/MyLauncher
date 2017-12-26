@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">迈宝赫</string>
+    <string name="quick_start">快速开始</string>
+
+    <string name="Gradient">坡度</string>
+    <string name="Time">时间</string>
+    <string name = "DistanceEnglish">距离    mile</string>
+    <string name = "Distance">距离    km</string>
+    <string name="Heat">热量</string>
+    <string name="Speed">速度   km/h</string>
+    <string name="SpeedEnglish">速度   mile/h</string>
+    <string name="Heart">心率</string>
+
+    <string name="Age">年龄</string>
+    <string name="BoyOrGril">女</string>
+    <string name="Height">身高</string>
+    <string name="Weight">体重</string>
+    <string name="Kg">Kg</string>
+    <string name="M">CM</string>
+    <string name="Year">岁</string>
+    <string name="Sex">性别</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="set_per">个人设置</string>
+    <string name="Movie">电影</string>
+    <string name="Mode_Now">现有模式</string>
+    <string name="Number_AV">数字AV</string>
+    <string name="Music">音乐</string>
+    <string name="Explorer">浏览器</string>
+    <string name="Tv">TV</string>
+    <string name="Usb">USB</string>
+
+    <string name="Back">返回</string>
+    <string name="Confirm">确定</string>
+    <string name="Pause">暂停</string>
+    <string name="Stop">停止</string>
+    <string name="Set">设定</string>
+    <string name="GradientNumber">10</string>
+    <string name="GradientUnit">N</string>
+    <string name="SpeedUnit">Km/h</string>
+
+
+    <string name="Hand">手动</string>
+    <string name="Fluctuate">起伏</string>
+    <string name="Climbing">爬坡</string>
+    <string name="Interval">间歇</string>
+    <string name="LostWeight">减重</string>
+    <string name="Mountion">山地</string>
+    <string name="Burn">燃脂</string>
+
+    <string name="HeartLow">120次/分</string>
+    <string name="HeartMid">138次/分</string>
+    <string name="HeartHigh">157次/分</string>
+
+
+    <string name="Goal">目标</string>
+    <string name="Project">项目</string>
+    <string name="Task">任务</string>
+    <string name="Nothing">无</string>
+
+    <string name="Parameter">参数设置</string>
+    <string name="factoryPatternSet">工厂参数设置</string>
+    <string name="androidPatternSet">安卓参数设置</string>
+    <string name="totalTime">总时间</string>
+    <string name="totalDistance">总距离</string>
+    <string name="SIENG">公制或英制</string>
+    <string name="minSpeed">最小速度</string>
+    <string name="maxSpeed">最大速度</string>
+    <string name="maxiNCLINE">最大坡度</string>
+    <string name="speedTime">加速时间</string>
+    <string name="whell">传动比</string>
+    <string name="autoOil">加油距离</string>
+    <string name="oilTime">加油时间</string>
+    <string name="language">语言</string>
+    <string name="addOil">手动加油</string>
+    <string name="generalSet">一般设定</string>
+    <string name="elevator">升降机</string>
+    <string name="password">密码</string>
+    <string name="recoverSet">恢复出厂设置</string>
+    <string name="exit">退出</string>
+    <string name="versions">版本号:  </string>
+
+    <string name="setSection">升降机段数设置</string>
+    <string name="set">设定: </string>
+    <string name="segment">段</string>
+    <string name="run">运行</string>
+    <string name="stepOne">步骤一：自动升降机范围</string>
+    <string name="stepTwo">步骤二：段数设定</string>
+    <string name="reset">重置</string>
+
+    <string name="passwordSet">密码设定</string>
+    <string name="closePasswordSet">打开密码功能</string>
+    <string name="openPasswordSet">关闭密码功能</string>
+    <string name="save">保存</string>
+    <string name="kilometre">公里</string>
+    <string name="oldPassword">旧密码: </string>
+    <string name="newPassword">新密码: </string>
+
+    <string name="warning">警告</string>
+    <string name="refueling">加油中，请等待！！</string>
+    <string name="number">10</string>
+    <string name="safeguard">设备维护中！！</string>
+
+    <string-array name="Array_Sex">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+
+    <string name="History">历史</string>
+    <string name="All">全部</string>
+    <string name="Collect">收藏</string>
+    <string name="str_please_input_password">请输入密码</string>
+    <string name="str_cancel">取消</string>
+    <string name="str_confirm">确定</string>
+    <string name="str_prompt">提示</string>
+    <string name="str_input_password_error">输入密码错误</string>
+    <string name="str_boy">男</string>
+    <string name="Min">Min</string>
+    <string name="Kcal">Kcal</string>
+    <string name="m">m</string>
+    <string name="str_girl">女</string>
+    <string name="str_number_out">数据超出最大值，已使用最大值</string>
+    <string name="str_number_error">输入数据有误，请重新输入!</string>
+    <string name="str_data_lenght_out">数据长度超出范围！</string>
+    <string name="str_old_password_error">旧密码错误,请重新输入！！</string>
+    <string name="str_tishi">提示</string>
+    <string name="str_password_uadata">密码已修改成功！！</string>
+    <string name="str_new_password_null">新密码不能为空或为0！</string>
+
+
+</resources>

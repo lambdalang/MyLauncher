@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\xml_wifi_04.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable-mdpi\\xml_wifi_04.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\xml_wifi_01.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable-mdpi\\xml_wifi_01.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\xml_wifi_icon.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable-mdpi\\xml_wifi_icon.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\xml_wifi_choose_icon.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable-mdpi\\xml_wifi_choose_icon.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\xml_wifi_00.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable-mdpi\\xml_wifi_00.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\xml_textcolor.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable-mdpi\\xml_textcolor.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\my_selector.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable-mdpi\\my_selector.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\wallpaper_gallery_item.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable-mdpi\\wallpaper_gallery_item.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\xml_wifi_03.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable-mdpi\\xml_wifi_03.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\xml_wifi_net.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable-mdpi\\xml_wifi_net.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\wallpaper_gallery_background.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable-mdpi\\wallpaper_gallery_background.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\shape.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable-mdpi\\shape.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\xml_wifi_02.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable-mdpi\\xml_wifi_02.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\xml_select.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable-mdpi\\xml_select.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\xml_select_litter.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable-mdpi\\xml_select_litter.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\item_focus_white.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable-mdpi\\item_focus_white.xml"
+    }
+]

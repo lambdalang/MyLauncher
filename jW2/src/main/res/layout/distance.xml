@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+     >
+
+    <RelativeLayout
+        android:id="@+id/Distance_Layout"
+        android:visibility="invisible"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+          android:layout_marginTop="220dp"
+        android:layout_marginLeft="20dp" 
+        >
+
+        <TextView
+            android:id="@+id/TV_Distance_Show"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="0dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxEms="2"
+            android:singleLine="true"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+           android:background="@drawable/height_background"
+           />
+
+        <TextView
+            android:id="@+id/TV_setPerDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/Distance2"
+            android:textSize="30sp" 
+            android:layout_marginLeft="20dp"/>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

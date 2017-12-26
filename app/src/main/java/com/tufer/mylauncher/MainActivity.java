@@ -20,8 +20,10 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 import android.graphics.Color;
 import android.graphics.Point;
 import android.net.ConnectivityManager;
@@ -110,7 +112,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
     Timer mTimer = new Timer();
 
 
-    private ImageView launcherThermometer;
+    //private ImageView launcherThermometer;
     private TextView launcherTime;
     private TextView launcherDate;
     private TextView launcherWeatherCity;
@@ -126,6 +128,9 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
     private ImageView launcherWifi;
     private ImageView launcherUsb;
     private ImageView launcherNetwork;
+
+    private ImageView wendutu;
+    private TextView wendu;
 
 
     ViewGroup.LayoutParams para;
@@ -304,7 +309,9 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
 
 
     private void findViews() {
-        launcherThermometer = (ImageView) findViewById(R.id.launcher_thermometer);
+        wendutu=(ImageView)findViewById(R.id.TV_windutu);
+        wendu=(TextView)findViewById(R.id.TV_windu);
+        //launcherThermometer = (ImageView) findViewById(R.id.launcher_thermometer);
         launcherTime = (TextView) findViewById(R.id.launcher_time);
         launcherDate = (TextView) findViewById(R.id.launcher_date);
         launcherWeatherCity = (TextView) findViewById(R.id.launcher_weather_city);
@@ -438,6 +445,16 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
         strResumeToTvPlayer();
         startTimer();
         backHomeSource();
+        //温度开关
+        if(isTemperaturemonitoring){
+            wendu.setVisibility(View.VISIBLE);
+            wendutu.setVisibility(View.VISIBLE);
+            inwendu();
+        }else{
+            wendu.setVisibility(View.GONE);
+            wendutu.setVisibility(View.GONE);
+        }
+
     }
 
     @Override
@@ -448,6 +465,9 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
         if (wifiRec != null) {
             unregisterReceiver(wifiRec);
         }
+        if(temperaturemonitoringRec!=null){
+            unregisterReceiver(temperaturemonitoringRec);
+        }
         NetworkChangedManager.getInstence().removeNetworkListener(this);
         setPipscale(1);
         super.onDestroy();
@@ -456,6 +476,11 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
     @Override
     protected void onStop() {
         setPipscale(1);
+        // Stop the acquisition temperature, cancel the timer, cancel the task
+        if (mTemperatureTimer != null && mTemperatureTimerTask != null) {
+            mTemperatureTimer.cancel();
+            mTemperatureTimerTask.cancel();
+        }
         super.onStop();
     }
 
@@ -517,6 +542,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
             launcherNetwork.setVisibility(View.GONE);
         }
         launcherUsb.setVisibility(SDcardBroadcastReceiver.isVisible ? View.VISIBLE : View.GONE);
+        isTemperaturemonitoring=getSharedPreferences("MyLauncher",Context.MODE_PRIVATE ).getBoolean("isTemperaturemonitoring",false);
     }
 
     private String getDate() {
@@ -539,6 +565,11 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
 
         IntentFilter wifiFilter = new IntentFilter(WifiManager.WIFI_STATE_CHANGED_ACTION);
         registerReceiver(wifiRec, wifiFilter);
+
+        IntentFilter wenduFilter = new IntentFilter();
+        wenduFilter.addAction("tufer.com.menutest.action.TemperaturemonitoringOn");
+        wenduFilter.addAction("tufer.com.menutest.action.TemperaturemonitoringOff");
+        registerReceiver(temperaturemonitoringRec, wenduFilter);
     }
 
     @Override
@@ -587,8 +618,30 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
                 }
                 break;
             case R.id.linearlayout_teaching:
+                if (TvCommonManager.getInstance().getCurrentTvInputSource() != TvCommonManager.INPUT_SOURCE_STORAGE) {
+                    Log.i(TAG, "R.id.whiteboard:Switch input source to storage...");
+                    TvCommonManager.getInstance().setInputSource(TvCommonManager.INPUT_SOURCE_STORAGE);
+                }
+                intent = new Intent();
+                intent.setClassName("com.supera.board", "com.supera.board.MainActivity");
+                intent.addCategory(Intent.CATEGORY_LAUNCHER);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                final PackageManager packageManager = getPackageManager();
+                List<ResolveInfo> resolveInfo = packageManager.queryIntentActivities(intent, PackageManager.MATCH_DEFAULT_ONLY);
+                if (resolveInfo.size() > 0) {
+                    startActivity(intent);
+                } else {
+                    Log.i(TAG, "No whiteboard Package, Skip starting whiteboard.");
+                    Toast.makeText(this, R.string.no_app, Toast.LENGTH_SHORT).show();
+                }
+
                 break;
             case R.id.linearlayout_teaching_resources:
+                if (isAvilible("com.estrongs.android.pop")) {
+                    startApp("com.estrongs.android.pop");
+                } else {
+                    Toast.makeText(this, R.string.no_app, Toast.LENGTH_SHORT).show();
+                }
                 break;
             case R.id.linearlayout_all_app:
                 intent.setClass(this, AllApplicationActivity.class);
@@ -604,6 +657,8 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
             case R.id.linearlayout_book:
                 if (isAvilible("cn.wps.moffice_eng")) {
                     startApp("cn.wps.moffice_eng");
+                }else if(isAvilible("cn.wps.moffice_i18n_TV")) {
+                    startApp("cn.wps.moffice_i18n_TV");
                 } else {
                     Toast.makeText(this, R.string.no_app, Toast.LENGTH_SHORT).show();
                 }
@@ -674,6 +729,8 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
             case 2:
                 //launcherWifi.setBackgroundResource(R.drawable.wifi0);
                 launcherNetwork.setVisibility(View.VISIBLE);
+                Util.getCity(handler);
+                Util.getWeather(Util.city, handler);
                 //launcherNetwork.setBackgroundResource(R.drawable.network);
                 //			 if (!mWeather.isJsonEnd() && (checkNetworkData())) {
 
@@ -716,14 +773,14 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
                     // TV_wifi.setText("5");
                     launcherWifi.setBackgroundResource(R.drawable.wifi0);
                     break;
-//                case 6:
-////                    // TV_wifi.setText("5");
-////                    wendu.setText(cTemp+getString(R.string.degree)+"C");
-//                    break;
-//                case 7:
-//                    wendu.setVisibility(View.GONE);
-//                    wendutu.setVisibility(View.GONE);
-//                    break;
+                case 6:
+                    // TV_wifi.setText("5");
+                    wendu.setText(cTemp+getString(R.string.degree)+"C");
+                    break;
+                case 7:
+                    wendu.setVisibility(View.GONE);
+                    wendutu.setVisibility(View.GONE);
+                    break;
                 default:
                     break;
             }
@@ -833,6 +890,15 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
             try {
                 int screenWidth = TvManager.getInstance().getPanelIniInfo("panel:m_wPanelWidth");//px
                 int screenHeight = TvManager.getInstance().getPanelIniInfo("panel:m_wPanelHeight");//px
+                if(screenWidth<0||screenHeight<0){
+                    DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
+                    screenWidth=displayMetrics.widthPixels;
+                    screenHeight=displayMetrics.heightPixels;
+                    Log.d(TAG, "Density is " + displayMetrics.density + " densityDpi is " + displayMetrics.densityDpi + " height: " + displayMetrics.heightPixels +
+                            " width: " + displayMetrics.widthPixels);
+                }
+//                screenWidth=1920;
+//                screenHeight=1080;
                 float fx = (screenWidth/(densityDpiX/dpi))/ width;
                 float fy = (screenHeight/(densityDpiY/dpi)) / heigh;
                 videoWindowType.x = (int) (getResources().getInteger(R.integer.videoWindowType_dimen_x) * fx * (densityDpiX/dpi) + 0.5f);
@@ -1113,6 +1179,82 @@ public class MainActivity extends Activity implements View.OnClickListener, Netw
             isLauncherJumpToMTvPlayer();
         } else {
             PowerOnstate = false;
+        }
+    }
+    private Timer mTemperatureTimer;
+    private TimerTask mTemperatureTimerTask;
+    private short[] mI2cTemperature = {0x00};
+    private short[] mGetTemperature = new short[2];
+    private String cTemp;
+    private boolean isTemperaturemonitoring=false;
+    private BroadcastReceiver temperaturemonitoringRec =new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            SharedPreferences.Editor localEditor = getSharedPreferences("MyLauncher", Context.MODE_PRIVATE).edit();
+            if(intent.getAction().equals("tufer.com.menutest.action.TemperaturemonitoringOn")) {
+                localEditor.putBoolean("isTemperaturemonitoring", true);
+                isTemperaturemonitoring=true;
+            }else if(intent.getAction().equals("tufer.com.menutest.action.TemperaturemonitoringOff")) {
+                localEditor.putBoolean("isTemperaturemonitoring", false);
+                isTemperaturemonitoring=false;
+            }
+            localEditor.apply();
+        }
+    };
+    private void inwendu() {
+        try {
+            mTemperatureTimer = new Timer();
+            getwendu();
+            if(mGetTemperature[0]>100){
+                wendu.setVisibility(View.GONE);
+                wendutu.setVisibility(View.GONE);
+            }else{
+                mTemperatureTimerTask = new TimerTask() {
+
+
+                    @Override
+                    public void run() {
+
+                        getwendu();
+                        if(mGetTemperature[0]>110){
+                            Message message = Message.obtain();
+                            message.what=7;
+                            wifiHandler.sendMessage(message);
+                            return;
+                        }
+                        int temp = ((mGetTemperature[0] & 0xFF) * 256
+                                + (mGetTemperature[1] & 0xF0)) / 16;
+                        if (temp > 2047) {
+                            temp -= 4096;
+                        }
+
+                        double aTemp = temp * 0.0625;
+                        DecimalFormat df = new DecimalFormat("#.0");
+                        cTemp=df.format(aTemp);
+                        double fTemp = (aTemp * 1.8) + 32;
+                        Message message = Message.obtain();
+                        message.what=6;
+                        wifiHandler.sendMessage(message);
+
+                    }
+                };
+                if (mTemperatureTimer != null && mTemperatureTimerTask != null) {
+                    mTemperatureTimer.schedule(mTemperatureTimerTask,1000, 1000);
+                    Log.d(TAG, "Start the acquisition temperature.");
+                }
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+    }
+    public void getwendu(){
+        try {
+            mGetTemperature = TvManager.getInstance().getFactoryManager().
+                    readBytesFromI2C(35, mI2cTemperature, (short) 2);
+        } catch (TvCommonException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
         }
     }
 }

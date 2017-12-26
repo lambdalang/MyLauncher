@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/set_background"
+    >
+
+     
+   <include android:id="@+id/Menu_Commen" layout="@layout/menu_common" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="520dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center" >
+
+            <ImageButton
+                android:id="@+id/IB_LostWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/IB_Interval"
+                android:layout_marginLeft="24dp"
+                android:layout_toRightOf="@+id/IB_Interval"
+                android:background="@drawable/lose_eight_no_shine"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:id="@+id/IB_Mountion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/IB_LostWeight"
+                android:layout_marginLeft="28dp"
+                android:layout_toRightOf="@+id/IB_LostWeight"
+                android:layout_weight="1"
+                android:background="@drawable/mountion_no_shine"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:id="@+id/IB_Fluctuate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/IB_Hand_Move"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/IB_Hand_Move"
+                android:background="@drawable/fluctuate_no_shine"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:id="@+id/IB_Climbing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/IB_Fluctuate"
+                android:layout_marginLeft="23dp"
+                android:layout_toRightOf="@+id/IB_Fluctuate"
+                android:background="@drawable/climbing_no_shine"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:id="@+id/IB_Interval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/IB_Climbing"
+                android:layout_marginLeft="24dp"
+                android:layout_toRightOf="@+id/IB_Climbing"
+                android:background="@drawable/interval_no_shine"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:id="@+id/IB_Burn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/IB_Mountion"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@+id/IB_Mountion"
+                android:background="@drawable/burn_no_shine"
+                android:scaleType="fitXY" />
+
+            <ImageButton
+                android:id="@+id/IB_Hand_Move"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="71dp"
+                android:layout_marginTop="97dp"
+                android:background="@drawable/hand_no_shine"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/TV_HandMove"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/IB_Climbing"
+                android:layout_alignRight="@+id/IB_Hand_Move"
+                android:layout_marginBottom="14dp"
+                android:layout_marginRight="29dp"
+                android:text="@string/Hand"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/TV_Fluctuate"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignBaseline="@+id/TV_HandMove"
+                android:layout_alignBottom="@+id/TV_HandMove"
+                android:layout_alignRight="@+id/IB_Fluctuate"
+                android:layout_marginRight="26dp"
+                android:text="@string/Fluctuate"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv_Climbing"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignBaseline="@+id/TV_Fluctuate"
+                android:layout_alignBottom="@+id/TV_Fluctuate"
+                android:layout_alignRight="@+id/IB_Climbing"
+                android:layout_marginRight="24dp"
+                android:text="@string/Climbing"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/TV_Interval"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignBaseline="@+id/tv_Climbing"
+                android:layout_alignBottom="@+id/tv_Climbing"
+                android:layout_alignLeft="@+id/IB_Interval"
+                android:layout_marginLeft="29dp"
+                android:text="@string/Interval"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/TV_Mountion"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignBaseline="@+id/tv_LostWeight"
+                android:layout_alignBottom="@+id/tv_LostWeight"
+                android:layout_alignRight="@+id/IB_Mountion"
+                android:layout_marginRight="29dp"
+                android:text="@string/Mountion"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv_Burn"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignBaseline="@+id/TV_Mountion"
+                android:layout_alignBottom="@+id/TV_Mountion"
+                android:layout_alignRight="@+id/IB_Burn"
+                android:layout_marginRight="28dp"
+                android:text="@string/Burn"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:layout_alignLeft="@+id/TV_Fluctuate"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="28dp"
+                
+                android:gravity="bottom" >
+
+                <ImageView
+                    android:id="@+id/IV_BackGround"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="70dp"
+                    android:layout_marginBottom="40dp"
+                    android:src="@drawable/project_1" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_LostWeight"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_alignBaseline="@+id/TV_Interval"
+                android:layout_alignBottom="@+id/TV_Interval"
+                android:layout_alignLeft="@+id/IB_LostWeight"
+                android:layout_marginLeft="24dp"
+                android:text="@string/LostWeight"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/TV_SetPer"
+                android:layout_width="160sp"
+                android:layout_height="60sp"
+                android:layout_alignLeft="@+id/IB_Interval"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="@string/Mode_Now"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp" />
+
+        </RelativeLayout>
+	
+   
+</RelativeLayout>

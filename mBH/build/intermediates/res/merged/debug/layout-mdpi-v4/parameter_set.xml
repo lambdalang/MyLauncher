@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/set_background">
+
+    <TextView
+        android:id="@+id/TV_SetPer"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:text="@string/Parameter"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp" />
+
+    <LinearLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_below="@+id/TV_SetPer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TV_factoryPatternSet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/factoryPatternSet"
+                android:textSize="30sp" />
+
+            <ImageButton
+                android:id="@+id/IB_factoryPatternSet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/parameter_imagebutton_selector" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_marginLeft="200dp">
+
+            <TextView
+                android:id="@+id/TV_androidPatternSet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/androidPatternSet"
+                android:textSize="30sp" />
+
+            <ImageButton
+                android:id="@+id/IB_androidPatternSet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/parameter_imagebutton_selector" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/IB_Background_Left_in"
+        android:layout_toLeftOf="@+id/IB_Background_Right_in">
+
+        <Button
+            android:id="@+id/Confirm"
+            android:layout_width="600dp"
+            android:layout_height="67dp"
+
+            android:text="@string/Confirm"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:background="@drawable/set_button_selector"/>
+
+        <Button
+            android:id="@+id/Back"
+            android:layout_width="600dp"
+            android:layout_height="67dp"
+
+            android:text="@string/Back"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/set_button_selector"/>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/Commen_First"
+        layout="@layout/commen" />
+</RelativeLayout>

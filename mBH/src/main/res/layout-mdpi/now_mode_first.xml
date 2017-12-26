@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/now_mode_first"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/Now_Mode_First"
+        android:layout_width="1200dp"
+        android:layout_height="510dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/first_linearlayout_style">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/IV_Project"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:src="@drawable/project" />
+
+                <TextView
+                    android:id="@+id/TV_Project"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/Project"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/IB_Hand_Move"
+                style="@style/frist_linearlayout_style_1"
+                android:layout_marginLeft="150dp"
+                android:background="@drawable/first_page_1_state">
+
+                <TextView
+                    android:id="@+id/TV_HandMove"
+                    android:text="@string/Hand"
+                    style="@style/frist_text_style"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/IB_Fluctuate"
+                android:background="@drawable/first_page_2_state"
+                style="@style/frist_linearlayout_style_1">
+
+                <TextView
+                    android:id="@+id/TV_Fluctuate"
+                    android:text="@string/Fluctuate"
+                    style="@style/frist_text_style"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/IB_Climbing"
+                android:background="@drawable/first_page_3_state"
+                style="@style/frist_linearlayout_style_1">
+
+                <TextView
+                    android:id="@+id/tv_Climbing"
+                    android:text="@string/Climbing"
+                    style="@style/frist_text_style"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/IB_Interval"
+                android:background="@drawable/first_page_4_state"
+                style="@style/frist_linearlayout_style_1">
+
+                <TextView
+                    android:id="@+id/TV_Interval"
+                    android:text="@string/Interval"
+                    style="@style/frist_text_style"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/first_linearlayout_style"
+            android:layout_marginTop="-29dp">
+            <LinearLayout
+                android:id="@+id/IB_LostWeight"
+                android:background="@drawable/first_page_5_state"
+                style="@style/frist_linearlayout_style_1"
+                android:layout_marginLeft="429dp">
+
+                <TextView
+                    android:id="@+id/tv_LostWeight"
+                    android:text="@string/LostWeight"
+                    style="@style/frist_text_style" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/IB_Mountion"
+                android:background="@drawable/first_page_6_state"
+                style="@style/frist_linearlayout_style_1">
+
+                <TextView
+                    android:id="@+id/TV_Mountion"
+                    android:text="@string/Mountion"
+                    style="@style/frist_text_style"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/IB_Burn"
+                android:background="@drawable/first_page_7_state"
+                style="@style/frist_linearlayout_style_1">
+
+                <TextView
+                    android:id="@+id/tv_Burn"
+                    android:text="@string/Burn"
+                    style="@style/frist_text_style"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

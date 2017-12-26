@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	
+     >
+
+    <LinearLayout
+        android:id="@+id/Now_Mode_Three"
+        android:layout_width="1300dp"
+        android:layout_height="510dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="180dp">
+
+            <ImageView
+                android:id="@+id/IV_Goal"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/goal" />
+
+            <TextView
+                android:id="@+id/TV_Goal"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="@string/Goal"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/IB_Time"
+            style="@style/three_linearlayout_style"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/three_page_1_state">
+
+            <TextView
+                android:id="@+id/TV_Time"
+                android:text="@string/Time"
+                style="@style/frist_text_style"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/IB_Distacne"
+            style="@style/three_linearlayout_style"
+            android:background="@drawable/three_page_2_state">
+
+            <TextView
+                android:id="@+id/TV_Distance"
+                android:text="@string/Distance"
+                style="@style/frist_text_style"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/IB_Hot"
+            style="@style/three_linearlayout_style"
+            android:background="@drawable/three_page_3_state">
+
+            <TextView
+                android:id="@+id/TV_Heat"
+                android:text="@string/Heat"
+                style="@style/frist_text_style"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

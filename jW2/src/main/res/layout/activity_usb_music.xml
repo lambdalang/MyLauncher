@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/set_background" >
+    
+     <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="520dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+           >
+            
+         <TextView
+                android:id="@+id/TV_SetPer"
+                android:layout_width="160sp"
+                android:layout_height="60sp"
+                android:layout_centerHorizontal="true"
+               android:layout_marginTop="0dp"
+               android:gravity="center"
+                android:text="@string/Mode_Now"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp" />
+         
+         <ListView 
+             android:id="@+id/LV_Music"
+             android:layout_width="600dp"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="100dp"
+             ></ListView>
+    </RelativeLayout>
+    
+
+</RelativeLayout>

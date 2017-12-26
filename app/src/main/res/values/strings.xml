@@ -3,7 +3,7 @@
     <string name="str_default_city">深圳</string>
     <string name="launcher_menu_media">多媒体</string>
     <string name="launcher_menu_teaching">白板教学</string>
-    <string name="launcher_menu_teaching_resources">教学资源</string>
+    <string name="launcher_menu_teaching_resources">文件浏览器</string>
     <string name="launcher_menu_all_app">所有应用</string>
     <string name="launcher_menu_browser">浏览器</string>
     <string name="launcher_menu_book">WPS Office</string>

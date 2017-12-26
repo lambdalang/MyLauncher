@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="invisible"
+    >
+    
+  		<RelativeLayout 
+            android:id="@+id/RL_elevator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="200dp"
+           
+            android:background="@drawable/elevator_set"
+            >
+            
+  		    <TextView 
+  		        android:id="@+id/TV_elevatorTop"
+  		         android:layout_width="wrap_content"
+          		  android:layout_height="wrap_content"
+          		  android:text="@string/setSection"
+          		  android:textSize="30sp"
+          		  android:layout_marginTop="20dp"
+          		 android:layout_centerHorizontal="true"
+  		        />
+  		    
+  		     <TextView 
+  		        android:id="@+id/TV_set"
+  		         android:layout_width="wrap_content"
+          		  android:layout_height="wrap_content"
+          		  android:text="@string/set"
+          		  android:textSize="30sp"
+          		  android:layout_marginTop="80dp"
+          		android:layout_marginLeft="40dp"/>
+  		     
+  		      <TextView 
+  		        android:id="@+id/TV_setNumber"
+  		         android:layout_width="wrap_content"
+          		  android:layout_height="wrap_content"
+          		  android:textSize="30sp"
+          		  android:layout_marginTop="80dp"
+          		android:layout_centerHorizontal="true"
+          		android:textColor="#FFFFFF"
+          		android:gravity="center"
+          		android:clickable="true"
+          		android:background="@drawable/set_number"/>
+  		      
+  		      <Button 
+  		         android:id="@+id/TV_run"
+  		         android:layout_width="wrap_content"
+          		  android:layout_height="wrap_content"
+          		  android:layout_below="@+id/TV_setNumber"
+          		  android:layout_centerHorizontal="true"
+          		  android:layout_marginTop="20dp"
+          		  android:text="@string/run"
+  		          />
+  		      
+  		      <TextView 
+  		        android:id="@+id/TV_stepOne"
+  		         android:layout_width="wrap_content"
+          		  android:layout_height="wrap_content"
+          		  android:text="@string/stepOne"
+          		  android:textSize="20sp"
+          		  android:layout_marginTop="200dp"
+          		android:layout_marginLeft="0dp"/>
+  		      
+  		      <TextView 
+  		        android:id="@+id/TV_stepTwo"
+  		         android:layout_width="wrap_content"
+          		  android:layout_height="wrap_content"
+          		  android:text="@string/stepTwo"
+          		  android:textSize="20sp"
+          		  android:layout_marginTop="240dp"
+          		android:layout_marginLeft="0dp"/>
+  		      
+  		      <TextView 
+  		        android:id="@+id/TV_reset"
+  		         android:layout_width="wrap_content"
+          		  android:layout_height="wrap_content"
+          		  android:text="@string/reset"
+          		  android:textSize="30sp"
+          		  android:layout_marginTop="320dp"
+          		android:layout_marginLeft="220dp"/>
+  		      
+  		      <TextView 
+  		        android:id="@+id/TV_segment"
+  		         android:layout_width="wrap_content"
+          		  android:layout_height="wrap_content"
+          		  android:text="@string/segment"
+          		  android:textSize="30sp"
+          		  android:layout_marginTop="80dp"
+          		android:layout_marginLeft="260dp"/>
+            </RelativeLayout>
+    
+</RelativeLayout>

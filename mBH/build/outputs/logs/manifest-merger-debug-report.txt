@@ -1,0 +1,95 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:2:1-37:12
+	package
+		ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:3:5-26
+		INJECTED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml
+		INJECTED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml
+		INJECTED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml
+		INJECTED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:21.0.3] F:\Tufer_workspace\MyLauncher\mBH\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:15:5-42
+	android:targetSdkVersion
+		ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml
+		INJECTED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:8:9-35
+		INJECTED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml
+		INJECTED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml
+application
+ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:10:5-36:19
+MERGED from [com.android.support:support-v4:21.0.3] F:\Tufer_workspace\MyLauncher\mBH\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:16:5-19
+	android:label
+		ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:13:9-41
+	android:allowBackup
+		ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:11:9-35
+	android:icon
+		ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:12:9-42
+	android:theme
+		ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:14:9-56
+activity#com.ADA.activity.SetActivity
+ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:16:9-74
+	android:name
+		ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:16:19-62
+activity#com.ADA.activity.SetPerActivity
+ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:17:9-77
+	android:name
+		ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:17:19-65
+activity#com.ADA.activity.ModeNowActivity
+ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:18:9-78
+	android:name
+		ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:18:19-66
+activity#com.ADA.activity.TaskActivity
+ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:19:9-75
+	android:name
+		ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:19:19-63
+activity#com.ADA.activity.MovieActivity
+ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:20:9-76
+	android:name
+		ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:20:19-64
+activity#com.ADA.activity.ParameterSettingActivity
+ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:21:9-87
+	android:name
+		ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:21:19-75
+activity#com.ADA.activity.FactoryPatternSet
+ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:22:9-80
+	android:name
+		ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:22:19-68
+activity#com.ADA.activity.WarningActivity
+ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:23:9-78
+	android:name
+		ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:23:19-66
+activity#com.ADA.activity.MainActivity
+ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:24:9-33:20
+	android:label
+		ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:26:13-45
+	android:name
+		ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:25:13-57
+intent-filter#android.intent.action.MAIN+android.intent.category.DEFAULT+android.intent.category.HOME+android.intent.category.LAUNCHER
+ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:27:13-32:29
+action#android.intent.action.MAIN
+ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:28:17-69
+	android:name
+		ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:28:25-66
+category#android.intent.category.HOME
+ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:29:17-73
+	android:name
+		ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:29:27-70
+category#android.intent.category.DEFAULT
+ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:30:17-76
+	android:name
+		ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:30:27-73
+category#android.intent.category.LAUNCHER
+ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:31:17-77
+	android:name
+		ADDED from F:\Tufer_workspace\MyLauncher\mBH\src\main\AndroidManifest.xml:31:27-74

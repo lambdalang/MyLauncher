@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+     <string name="app_name">嘉沃</string>
+    <string name="quick_start">快速开始</string> 
+     <string name="trainSet">训练设置</string> 
+    
+    <string name ="Gradient">坡度</string>
+    <string name="Time">时间</string>
+    <string name="timeDefault">30</string>
+    <string name = "DistanceEnglish">距离</string>
+    <string name = "Distance">距离</string>
+    <string name = "Distance2">距离</string>
+    <string name = "Heat">热量</string>
+    <string name="Speed">速度</string>
+    <string name="SpeedCircle">速度</string>
+    <string name="SpeedEnglish">速度</string>
+     <string name = "Heart">心率</string>
+      <string name = "personalConsumptionInformation">个人消耗信息</string>
+      
+    <string name="title_activity_main2" translatable="false">Main2Activity</string>
+    <string name="incline_title">INCLINE</string>
+    <string name="time_title">TIME</string>
+    <string name="incline_unit" translatable="false">N</string>
+    <string name="time_unit" translatable="false">H:M:S</string>
+    <string name="distance_title">DISTANCE</string>
+    <string name="distance_unit" translatable="false">km</string>
+    <string name="calories_title">CALORIE</string>
+    <string name="calories_unit" translatable="false">kCal</string>
+    <string name="heart_rate_title">HEART RATE</string>
+    <string name="heart_rate_unit" translatable="false">Beats/min</string>
+    <string name="speed_title">SPEED</string>
+    <string name="speed_unit" translatable="false">km/h</string>
+    
+     <string name="Age">年龄</string>
+     <string name="ageDefault">35</string>
+     <string name="BoyOrGril">女</string>
+      <string name="Boy">男</string>
+      <string name="Height">身高</string>
+      <string name="heightDefault">168</string>
+      	<string name="Weight">体重</string>	
+      	 <string name="weightDefault">68</string>
+      <string name="Kg">Kg</string>
+      <string name="M">M</string>
+      <string name="Year">岁</string>    	
+     <string name="Sex">性别</string>
+    <string name="action_settings">Settings</string>
+    <string name="youHaveNoChoiceModel">你没有选择模式!</string>
+    
+     <string name="set_per">个人设置</string>
+     <string name="Movie">电影</string>
+    <string name="Mode_Now">现有模式</string>
+    <string name="Number_AV">数字高清</string>
+    <string name="MP3">MP3</string>
+      <string name="Music">音乐</string>
+    <string name="Explorer">浏览器</string>
+     <string name="Tv">TV</string>		
+      <string name="Usb">USB</string>	
+      <string  name="Hdmi">HDMI</string>
+    
+     <string name="Back">返回</string>    
+    <string name="Confirm">确定</string>
+     <string name="Pause">暂停</string>
+      <string name="Continue">继续</string>
+     <string name="Stop">停止</string>
+    <string name="Set">设定</string>
+    <string name="GradientNumber">10</string>
+     <string name="GradientUnit">N</string>
+        <string name="SpeedUnit">Km/h</string>
+    
+    <string name = "Hand">手动</string>
+    <string name = "Fluctuate">起伏</string>
+    <string name = "Climbing">爬坡</string>
+    <string name = "Interval">间歇</string>
+    <string name = "LostWeight">减重</string>
+    <string name = "Mountion">山地</string>
+     <string name = "Burn">燃脂</string>
+    
+      <string name = "HeartLow">120次/分</string>
+       <string name = "HeartMid">138次/分</string>
+        <string name = "HeartHigh">157次/分</string>
+        
+   <string name="Goal">目标</string>
+    <string name = "Project">项目</string>
+    <string name="Task">任务</string>
+     <string name="Nothing">无</string>
+     
+     <string name="Picture">图片</string>
+     
+       <string name="Parameter">参数设置</string>
+       <string name="factoryPatternSet">工厂参数设置</string>
+       <string name="androidPatternSet">安卓参数设置</string>
+        <string name="totalTime">总时间</string>
+        <string name="totalDistance">总距离</string>
+         <string name="SIENG">公制或英制</string>
+       <string name="minSpeed">最小速度</string>
+       <string name="maxSpeed">最大速度</string>
+       <string name="maxiNCLINE">最大坡度</string>
+       <string name="speedTime">加速时间</string>
+       <string name="whell">传动比</string>
+       <string name="autoOil">加油距离</string>
+       <string name="oilTime">加油时间</string>
+       <string name="language">语言</string>
+       <string name="addOilNumber">加油报警次数</string>
+       <string name="addOil">手动加油</string>
+        <string name="addOiling">手动加油  10秒！！</string>
+       <string name="generalSet">一般设定</string>
+       <string name="elevator">升降机</string>
+       <string name="password">密码</string>
+       <string name="recoverSet">恢复出厂设置</string>
+       <string name="exit">退出</string>
+        <string name="versions">版本号:  </string>
+         
+        <string name="setSection">升降机段数设置</string>
+        <string name="set">设定: </string>
+        <string name="segment">段</string>
+        <string name="run">运行</string>
+        <string name="stepOne">步骤一：自动升降机范围</string>
+        <string name="stepTwo">步骤二：段数设定</string>
+        <string name="reset">重置</string>
+         <string name="stepOneDetectionZero">不自检</string>
+        <string name="stepOneDetectionOne">正在自检</string>
+        <string name="stepOneDetectionTwo">自检完成</string>
+        <string name="selfTesting">自检</string>
+        <string name="ok">ok</string>
+        
+        <string name="passwordSet">密码设定</string>
+        <string name="closePasswordSet">关闭密码功能</string>
+        <string name="openPasswordSet">打开密码功能</string>
+        <string name="save">保存</string>
+        <string name="kilometre">公里</string>
+        <string name="oldPassword">旧密码: </string>
+        <string name="newPassword">新密码: </string>
+        
+        <string name="warning">警告</string>
+        <string name="refueling">加油中，请等待！！</string>
+        <string name="number">10</string>
+        <string name="safeguard">设备维护中！！</string>
+        
+        <string name="lock">跑步机已锁，请联系销售</string>
+        
+   	<string-array name = "Array_Sex">
+   	    <item>男</item>
+   	    <item>女</item>
+   	</string-array>
+   	
+   	<string  name="cancle">取消</string>
+   	<string  name="PleaseEnterThePassword">请输入密码</string>
+   	<string name="prompt">提示</string>
+   	<string name="EnterThePasswordMistake">输入密码错误</string>
+   	 <string name="TheStandbystateCouldNotEnterTheFactoryPattern">非待机状态，不能进入工厂模式!!</string>
+   	<string name="PasswordCannotContainLettersPleaseEnterAgain">密码不能包含字母，请重新输入!</string>
+   	<string name="YouWantToDeleteTheDataIsEmpty">你要删除的数据是空的！</string>
+	<string name="ParameterIsSetSuccessfully">参数设置成功!</string>
+	<string name="ThisPageDataDoNotSupportTheDecimalPoint">此页面数据不支持小数点</string>
+	<string  name="ThisDataTypeCannotHaveADecimalPoint">此数据类型不能有小数点!</string>
+	<string name="PasswordErrorPleaseTryAgain">密码错误！请重试 </string>
+	<string  name="DataIsSuccessfullySaved">数据保存成功!</string>
+		
+    <string name="hello_world">Hello world!</string>
+    <string name="ic_main_str_1">朗朗教育</string>
+    <string name="ic_main_str_2">朗朗乐园</string>
+    <string name="ic_main_str_3">朗朗教育</string>
+    <string name="ic_main_str_4">朗朗画板</string>
+    <string name="ic_main_str_5">朗朗TV</string>
+    <string name="ic_main_str_6">全部应用</string>
+    <string name="cant_found_activity">找不到指定的应用</string>
+    <string name="week">星期</string>
+    <string name="all_app">全部应用</string>
+    <string name="pick_wallpaper">朗朗壁纸</string>
+    <string name="wallpaper_instructions">设置壁纸</string>
+    
+    <string name="permlab_read_settings">read Home settings and shortcuts</string>
+    <!-- Permission description -->
+    <string name="permdesc_read_settings">Allows an app to read the settings and
+        shortcuts in Home.</string>
+    <!-- Permission short label -->
+    <string name="permlab_write_settings">write Home settings and shortcuts</string>
+    <!-- Permission description -->
+    <string name="permdesc_write_settings">Allows an app to change the settings and
+        shortcuts in Home.</string>
+
+</resources>

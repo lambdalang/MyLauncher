@@ -3,7 +3,7 @@
     <string name="str_default_city">shenzhen</string>
     <string name="launcher_menu_media">Multi-Media</string>
     <string name="launcher_menu_teaching">Whiteboard Teaching</string>
-    <string name="launcher_menu_teaching_resources">Teaching resources</string>
+    <string name="launcher_menu_teaching_resources">File browser</string>
     <string name="launcher_menu_all_app">All applications</string>
     <string name="launcher_menu_browser">Browser</string>
     <string name="launcher_menu_book">WPS Office</string>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/set_background">
+    
+       <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="560dp"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentTop="true"
+             android:layout_marginTop="92dp" >
+             
+           <TextView 
+               android:id="@+id/TV_USB"
+               android:layout_width="160dp"
+               android:layout_height="60dp"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="2dp"
+               android:text="@string/Usb"
+               android:textSize="30sp"
+               android:gravity="center"
+               />
+               
+               <ImageButton
+                   android:id="@+id/IB_UsbMovie"
+                   android:layout_width="wrap_content"
+             	   android:layout_height="wrap_content"
+             	   android:background="@drawable/usb_movie"
+             	   android:layout_toLeftOf="@+id/IB_UsbMusic"
+             	   android:layout_marginRight="100dp"
+             	   android:layout_marginTop="150dp"
+                   />
+               
+                 <TextView 
+             	  android:id="@+id/TV_UsbMovie"
+               	  android:layout_width="60dp"
+               	  android:layout_height="40dp"
+               	  android:layout_below="@+id/IB_UsbMovie"
+               	 android:layout_marginTop="20dp"
+               	  android:layout_toLeftOf="@+id/IB_UsbMusic"
+             	   android:layout_marginRight="140dp"
+               	  android:text="@string/Movie"
+               	  android:gravity="center"
+               	  android:textSize="30sp"
+               />
+               <ImageButton 
+                   android:id="@+id/IB_UsbMusic"
+                    android:layout_width="wrap_content"
+             	   android:layout_height="wrap_content"
+             	    android:background="@drawable/usb_music"
+             	    android:layout_centerHorizontal="true"
+             	   android:layout_marginTop="150dp"                  
+                   />
+               
+               <TextView 
+                    android:id="@+id/TV_UsbMusic"
+	               	 android:layout_width="60dp"
+	               	 android:layout_height="40dp"
+	               	 android:layout_below="@+id/IB_UsbMusic"
+	               	 android:layout_marginTop="20dp"
+	               	 android:layout_centerHorizontal="true"
+	               	 android:text="@string/Music"
+	               	 android:textSize="30sp"
+	               	 android:gravity="center"
+                   />
+               
+               <ImageButton 
+                    android:id="@+id/IB_UsbPicture"
+                    android:layout_width="wrap_content"
+             	   android:layout_height="wrap_content"
+             	   android:background="@drawable/usb_picture"
+             	   android:layout_marginTop="150dp"
+             	   android:layout_toRightOf="@+id/IB_UsbMusic"
+             	   android:layout_marginLeft="100dp"
+                   />
+               
+               <TextView 
+                     android:id="@+id/TV_UsbPicture"
+	               	 android:layout_width="60dp"
+	               	 android:layout_height="40dp"
+	               	 android:layout_below="@+id/IB_UsbPicture"
+	               	 android:layout_marginTop="20dp"
+	               	  android:layout_toRightOf="@+id/IB_UsbMusic"
+             	   android:layout_marginLeft="150dp"
+	               	 android:text="@string/Picture"
+	               	 android:textSize="30sp"
+	               	 android:gravity="center"
+                   />
+             
+         </RelativeLayout>
+
+       <include android:id="@+id/Commen_First" layout="@layout/commen_top" />
+       
+</RelativeLayout>

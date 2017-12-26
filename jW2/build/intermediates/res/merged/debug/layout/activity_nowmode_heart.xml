@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/set_background">
+
+     
+       <include android:id="@+id/Menu_Commen" layout="@layout/menu_common" />
+      
+          <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="520dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+             >
+
+		    	<ImageButton
+		    	    android:id="@+id/IB_Heart_85"
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:layout_alignTop="@+id/IB_Heart_75"
+		    	    android:layout_centerHorizontal="true"
+		    	    android:layout_weight="1"
+		    	    android:background="@drawable/heart_85"
+		    	    android:scaleType="fitXY" />
+		
+		    	<ImageButton
+		    	    android:id="@+id/IB_Heart_75"
+		    	    android:layout_width="wrap_content"
+		    	    android:layout_height="wrap_content"
+		    	    android:layout_alignTop="@+id/IB_Heart_65"
+		    	    android:layout_marginRight="80dp"
+		    	    android:layout_toLeftOf="@+id/IB_Heart_85"
+		    	    android:layout_weight="1"
+		    	    android:background="@drawable/heart_75"
+		    	    android:scaleType="fitXY" />
+		
+		    	    <ImageButton
+		    	        android:id="@+id/IB_Heart_65"
+		    	        android:layout_width="wrap_content"
+		    	        android:layout_height="wrap_content"
+		    	        android:layout_alignParentTop="true"
+		    	        android:layout_marginRight="80dp"
+		    	        android:layout_marginTop="100dp"
+		    	        android:layout_toLeftOf="@+id/IB_Heart_75"
+		    	        android:layout_weight="1"
+		    	        android:background="@drawable/heart_65"
+		    	        android:scaleType="fitXY" />
+
+		    	    <ImageView
+		    	        android:id="@+id/IV_Heart_Table"
+		    	        android:layout_width="wrap_content"
+		    	        android:layout_height="wrap_content"
+		    	        android:layout_alignTop="@+id/IB_Heart_85"
+		    	        android:layout_marginLeft="112dp"
+		    	        android:layout_toRightOf="@+id/IB_Heart_85"
+		    	        android:scaleType="fitXY"
+		    	        android:src="@drawable/heart_table" />
+
+		    	    <TextView
+		    	        android:id="@+id/TV_HandMove"
+		    	        android:layout_width="50dp"
+		    	        android:layout_height="30dp"
+		    	        android:layout_alignBottom="@+id/IB_Heart_75"
+		    	        android:layout_alignRight="@+id/IB_Heart_65"
+		    	        android:layout_marginBottom="12dp"
+		    	        android:layout_marginRight="30dp"
+		    	        android:text="65%"
+		    	        android:gravity="center"
+		    	        android:textColor="#FFFFFF"
+		    	        android:textSize="22sp" />
+
+		    	    <TextView
+		    	        android:id="@+id/TextView01"
+		    	        android:layout_width="50dp"
+		    	        android:layout_height="30dp"
+		    	        android:layout_alignBottom="@+id/IB_Heart_65"
+		    	        android:layout_alignRight="@+id/IB_Heart_75"
+		    	        android:layout_marginRight="28dp"
+		    	        android:gravity="center"
+		    	        android:text="75%"
+		    	        android:textColor="#FFFFFF"
+		    	        android:textSize="22sp" />
+
+		    	    <TextView
+		    	        android:id="@+id/TextView03"
+		    	        android:layout_width="160sp"
+		    	        android:layout_height="60sp"
+		    	        android:layout_alignParentTop="true"
+		    	        android:layout_centerHorizontal="true"
+		    	        android:text="@string/Mode_Now"
+		    	        android:textColor="#FFFFFF"
+		    	        android:textSize="28sp" />
+
+		    	    <TextView
+		    	        android:id="@+id/TextView02"
+		    	        android:layout_width="50dp"
+		    	        android:layout_height="30dp"
+		    	        android:layout_alignBaseline="@+id/TV_HandMove"
+		    	        android:layout_alignBottom="@+id/TV_HandMove"
+		    	        android:layout_centerHorizontal="true"
+		    	        android:gravity="center"
+		    	        android:text="85%"
+		    	        android:textColor="#FFFFFF"
+		    	        android:textSize="22sp" />
+		    	    
+		    	    <ImageView 
+		    	        android:id="@+id/IV_NowModeHeart_Background"
+		    	         android:layout_width="200dp"
+                   		 android:layout_height="100dp"
+                   		 android:layout_marginLeft="410dp"
+                   		 android:layout_marginTop="355dp"
+                   		 android:background="@drawable/nowmode_heart"
+                   		 
+		    	        />
+
+		</RelativeLayout>
+		
+    
+</RelativeLayout>

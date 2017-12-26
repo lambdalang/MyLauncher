@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/set_background">
+    
+    
+   
+          <include android:id="@+id/Menu_Commen" layout="@layout/menu_common" />
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="520dp"
+             android:layout_alignParentLeft="true"
+             android:layout_alignParentTop="true"
+             android:layout_marginTop="92dp" >
+
+             <ImageButton
+                 android:id="@+id/IB_Hot"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/IB_Distacne"
+                android:layout_toLeftOf="@+id/IB_Distacne"
+                android:layout_marginRight="100dp"
+                 android:background="@drawable/hot_no_shine"
+                 android:scaleType="fitXY" />
+
+             <ImageButton
+                 android:id="@+id/IB_Distacne"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="160dp"
+                 android:layout_centerHorizontal="true"
+                 android:background="@drawable/distance_no_shine"
+                 android:scaleType="fitXY" />
+
+             <TextView
+                 android:id="@+id/TV_Heat"
+                 android:layout_width="50dp"
+                 android:layout_height="30dp"
+                 android:layout_alignBaseline="@+id/TV_Time"
+                 android:layout_alignBottom="@+id/TV_Time"
+                 android:layout_alignRight="@+id/IB_Hot"
+                 android:layout_marginRight="30dp"
+                 android:text="@string/Heat"
+                 android:textColor="#FFFFFF"
+                 android:textSize="22sp" />
+
+             <TextView
+                 android:id="@+id/TV_Distance"
+                 android:layout_width="60dp"
+                 android:layout_height="30dp"
+                 android:layout_alignBottom="@+id/IB_Distacne"
+                 android:layout_centerHorizontal="true"
+                 android:layout_marginBottom="12dp"
+                 android:text="@string/Distance"
+                 android:textColor="#FFFFFF"
+                 android:textSize="22sp" />
+
+             <TextView
+                 android:id="@+id/TV_SetPer"
+                 android:layout_width="160sp"
+                 android:layout_height="60sp"
+                 android:layout_alignLeft="@+id/IB_Distacne"
+                 android:layout_alignParentTop="true"
+                 android:gravity="center"
+                 android:text="@string/Mode_Now"
+                 android:textColor="#FFFFFF"
+                 android:textSize="28sp" />
+
+             <ImageButton
+                 android:id="@+id/IB_Time"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignTop="@+id/IB_Distacne"
+                 android:layout_toRightOf="@+id/IB_Distacne"
+                 android:layout_marginLeft="100dp"
+                 android:background="@drawable/time_no_shine"
+                 android:scaleType="fitXY" />
+
+             <TextView
+                 android:id="@+id/TV_Time"
+                 android:layout_width="50dp"
+                 android:layout_height="30dp"
+                 android:layout_alignBottom="@+id/IB_Time"
+                 android:layout_alignRight="@+id/IB_Time"
+                 android:layout_marginRight="26dp"
+                 android:gravity="center"
+                 android:text="@string/Time"
+                 android:textColor="#FFFFFF"
+                 android:textSize="22sp" />
+
+              <ImageView 
+		    	        android:id="@+id/IV_NowModeGoal_Background"
+		    	         android:layout_width="200dp"
+                   		 android:layout_height="100dp"
+                   		 android:layout_marginLeft="410dp"
+                   		 android:layout_marginTop="363dp"
+                   		 android:background="@drawable/nowmode_goal"
+                   		 
+		    	        />
+         </RelativeLayout>
+	
+</RelativeLayout>

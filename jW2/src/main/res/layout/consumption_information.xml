@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >
+    
+    <RelativeLayout 
+        android:id="@+id/RL_consumptionInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:layout_centerVertical="true"
+       android:background="@drawable/consumption_nformation"
+        >
+        
+        <TextView 
+            android:id="@+id/TV_consumptionInformation"
+            android:layout_width="wrap_content"
+     	   android:layout_height="wrap_content"
+     	   android:layout_centerHorizontal="true"
+     	   android:text="@string/personalConsumptionInformation"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+     	   />
+        
+        <TextView 
+            android:id="@+id/TV_consumptionTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+         	 android:layout_below="@+id/TV_consumptionInformation"
+         	 android:layout_marginTop="30dp"
+           android:layout_alignParentLeft="true"
+            android:text="@string/Time"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"/>
+        
+         <TextView 
+            android:id="@+id/TV_consumptionTimeShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_alignTop="@+id/TV_consumptionTime"
+			android:layout_toRightOf="@+id/TV_consumptionTime"
+			android:layout_marginLeft="20dp"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"/>
+        
+        <TextView 
+            android:id="@+id/TV_consumptionDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TV_consumptionTime"
+         	 android:layout_marginTop="30dp"
+         	   android:text="@string/Distance2"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"/>
+        
+          <TextView 
+            android:id="@+id/TV_consumptionDistanceShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+    	  	android:layout_alignTop="@+id/TV_consumptionDistance"
+			android:layout_toRightOf="@+id/TV_consumptionDistance"
+			android:layout_marginLeft="20dp"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"/>
+        
+        <TextView 
+            android:id="@+id/TV_consumptionCalorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TV_consumptionDistance"
+         	 android:layout_marginTop="30dp"
+   			 android:text="@string/Heat"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"/>
+        
+          <TextView 
+            android:id="@+id/TV_consumptionCalorieShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+    	  	android:layout_alignTop="@+id/TV_consumptionCalorie"
+			android:layout_toRightOf="@+id/TV_consumptionCalorie"
+			android:layout_marginLeft="20dp"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"/>
+        
+        <TextView 
+            android:id="@+id/TV_consumptionSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TV_consumptionCalorie"
+         	 android:layout_marginTop="30dp"
+   			 android:text="@string/SpeedCircle"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"/>
+        
+            <TextView 
+            android:id="@+id/TV_consumptionSpeedShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+    	  	android:layout_alignTop="@+id/TV_consumptionSpeed"
+			android:layout_toRightOf="@+id/TV_consumptionSpeed"
+			android:layout_marginLeft="20dp"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"/>
+        
+ 	   <TextView 
+            android:id="@+id/TV_consumptionOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+    		android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TV_consumptionSpeed"
+         	 android:layout_marginTop="60dp"
+         	 android:layout_marginLeft="120dp"
+         	 android:clickable="true"
+            android:textSize="60sp"
+            android:text="@string/Confirm"
+            android:textColor="#FFFFFF"/>
+    </RelativeLayout>
+        
+        
+
+</RelativeLayout>

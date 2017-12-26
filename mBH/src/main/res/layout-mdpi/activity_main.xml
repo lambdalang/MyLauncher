@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/begin_back_ground"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.ADA.activity.MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_mbh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mbh_logo" />
+
+    <Button
+        android:id="@+id/btn_begin"
+        android:layout_width="140dp"
+        android:layout_height="80dp"
+        android:background="@drawable/begin"
+        android:text="@string/quick_start"
+        android:layout_marginTop="50dp"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

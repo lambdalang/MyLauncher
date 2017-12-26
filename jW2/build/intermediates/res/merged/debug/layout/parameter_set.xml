@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+     android:background="@drawable/set_background">
+   
+        <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingTop="20dp" >
+        
+       <TextView
+                android:id="@+id/TV_SetPer"
+                android:layout_width="160sp"
+                android:layout_height="40sp"
+               android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+              
+                android:text="@string/Parameter"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp" />
+            
+       		<TextView 
+       		   android:id="@+id/TV_factoryPatternSet"
+       		  android:layout_width="wrap_content"
+     		    android:layout_height="wrap_content"
+     		    android:layout_marginLeft="240dp"
+     		    android:layout_marginTop="60dp"
+     		    android:text="@string/factoryPatternSet"
+     		    android:textSize="30sp"
+     		    android:gravity="center"
+       		    />
+     		<ImageButton
+     		    android:id="@+id/IB_factoryPatternSet"
+     		    android:layout_width="wrap_content"
+     		    android:layout_height="wrap_content"
+     		    android:background="@drawable/general"
+     		    android:layout_centerVertical="true"
+     		    android:layout_marginLeft="200dp"
+     		    />
+        
+     		<TextView 
+       		   android:id="@+id/TV_androidPatternSet"
+       		  android:layout_width="wrap_content"
+     		    android:layout_height="wrap_content"
+     		     android:layout_marginLeft="720dp"
+     		     
+     		    android:layout_marginTop="60dp"
+     		    android:text="@string/androidPatternSet"
+     		    android:textSize="30sp"
+     		    android:gravity="center"
+       		    />
+     		<ImageButton
+     		    android:id="@+id/IB_androidPatternSet"
+     		    android:layout_width="wrap_content"
+     		    android:layout_height="wrap_content"
+     		    android:background="@drawable/general"
+     		    
+     		    android:layout_centerVertical="true"
+     		  android:layout_marginLeft="680dp"
+     		   
+     		    />
+        </RelativeLayout>
+ 
+
+</RelativeLayout>

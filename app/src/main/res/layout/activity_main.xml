@@ -7,19 +7,20 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:layout_marginTop="5dp">
 
         <ImageView
-            android:id="@+id/launcher_thermometer"
+            android:id="@+id/TV_windutu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:src="@drawable/wendu3" />
 
         <TextView
+            android:id="@+id/TV_windu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="-5dp"
@@ -118,8 +119,8 @@
                 android:gravity="center_vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:src="@drawable/launcher_weather_point" />
 
             </LinearLayout>
@@ -127,17 +128,17 @@
         </LinearLayout>
 
         <RelativeLayout
-            android:layout_width="460dp"
-            android:layout_height="310dp"
-            android:layout_marginLeft="190dp"
+            android:layout_width="480dp"
+            android:layout_height="345dp"
+            android:layout_marginLeft="170dp"
             android:layout_marginTop="15dp"
             android:gravity="center"
             android:orientation="vertical">
 
             <RelativeLayout
                 android:id="@+id/RL_tv"
-                android:layout_width="460dp"
-                android:layout_height="259dp"
+                android:layout_width="480dp"
+                android:layout_height="279dp"
                 android:nextFocusDown="@+id/linearlayout_all_app"
                 android:nextFocusLeft="@+id/RL_tv"
                 android:nextFocusRight="@+id/RL_tv">
@@ -146,11 +147,12 @@
                     android:id="@+id/pipview"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginBottom="@dimen/x2dp"
-                    android:layout_marginLeft="@dimen/x2dp"
-                    android:layout_marginRight="@dimen/x2dp"
-                    android:layout_marginTop="@dimen/x2dp"
-                    android:orientation="vertical">
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:background="@color/black">
 
                     <TextView
                         android:id="@+id/no_signal_text"
@@ -376,33 +378,33 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:layout_weight="1" />
 
         <ImageView
             android:id="@+id/launcher_usb"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:src="@drawable/usb"
             android:visibility="gone" />
 
         <ImageView
             android:id="@+id/launcher_wifi"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginRight="5dp"
             android:visibility="gone" />
 
         <ImageView
             android:id="@+id/launcher_network"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginRight="5dp"
             android:src="@drawable/network"
             android:visibility="gone" />

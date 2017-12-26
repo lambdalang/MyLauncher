@@ -1,0 +1,134 @@
+[
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_bg_holo.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable\\layout_bg_holo.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_searchview_holo_light.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable\\abc_textfield_searchview_holo_light.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\layout_bg.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable\\layout_bg.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\france.png",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable\\france.png"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\slide_btn_on.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable\\slide_btn_on.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\usa.png",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable\\usa.png"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_ab_holo_dark.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable\\abc_spinner_ab_holo_dark.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\wheel_bg_holo.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable\\wheel_bg_holo.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_ab_holo_light.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable\\abc_spinner_ab_holo_light.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable\\abc_ic_clear.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\ukraine.png",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable\\ukraine.png"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\wheel_bg.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable\\wheel_bg.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\wheel_val_holo.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable\\wheel_val_holo.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_searchview_holo_dark.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable\\abc_textfield_searchview_holo_dark.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_search_dropdown_dark.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable\\abc_search_dropdown_dark.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_search_dropdown_light.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable\\abc_search_dropdown_light.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\slide_btn_off.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable\\slide_btn_off.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\wheel_val.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable\\wheel_val.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_dislike.png",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable\\ic_action_dislike.png"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_ab_holo.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable\\abc_tab_indicator_ab_holo.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\canada.png",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable\\canada.png"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_searchview_right_holo_dark.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable\\abc_textfield_searchview_right_holo_dark.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_camera.png",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable\\ic_action_camera.png"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\slide_btn_thumb.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable\\slide_btn_thumb.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_searchview_right_holo_light.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable\\abc_textfield_searchview_right_holo_light.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_info.png",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\drawable\\ic_action_info.png"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_holo_light.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\drawable\\abc_ic_clear_holo_light.xml"
+    }
+]

@@ -2,8 +2,8 @@
 <resources>
     <integer name="linear_menu_big">95</integer>
     <integer name="linear_menu">80</integer>
-    <integer name="videoWindowType_dimen_width">454</integer>
-    <integer name="videoWindowType_dimen_height">254</integer>
-    <integer name="videoWindowType_dimen_x">658</integer>
-    <integer name="videoWindowType_dimen_y">144</integer>
+    <integer name="videoWindowType_dimen_width">458</integer>
+    <integer name="videoWindowType_dimen_height">258</integer>
+    <integer name="videoWindowType_dimen_y">138</integer>
+    <integer name="videoWindowType_dimen_x">645</integer>
 </resources>

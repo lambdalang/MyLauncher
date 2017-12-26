@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/Commen_First_Top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background__top">
+
+        <LinearLayout style="@style/commen_top_linearlayout_style">
+
+            <TextView
+                android:id="@+id/TV_Gradiend"
+                style="@style/commen_top_text_style"
+                android:text="@string/Gradient"
+                android:layout_marginLeft="133dp"/>
+
+            <TextView
+                android:id="@+id/TV_Gradiend_Show_Top"
+                style="@style/commen_top_text_style" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/commen_top_linearlayout_style">
+
+            <TextView
+                android:id="@+id/TV_Time"
+                style="@style/commen_top_text_style"
+                android:text="@string/Time"
+                android:layout_marginLeft="125dp"/>
+
+            <TextView
+                android:id="@+id/TV_Time_Show_Top"
+                style="@style/commen_top_text_style"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/commen_top_linearlayout_style">
+            <TextView
+                android:id="@+id/TV_Distance"
+                style="@style/commen_top_text_style"
+                android:text="@string/Distance"
+                android:layout_marginLeft="127dp"/>
+
+            <TextView
+                android:id="@+id/TV_Distance_Show_Top"
+                style="@style/commen_top_text_style" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/commen_top_linearlayout_style">
+
+            <TextView
+                android:id="@+id/TV_Heat"
+                style="@style/commen_top_text_style"
+                android:text="@string/Heat"
+                android:layout_marginLeft="115dp"/>
+
+            <TextView
+                android:id="@+id/TV_Heat_Show_Top"
+                style="@style/commen_top_text_style" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/commen_top_linearlayout_style">
+
+            <TextView
+                android:id="@+id/TV_Heart"
+                style="@style/commen_top_text_style"
+                android:text="@string/Heart"
+                android:layout_marginLeft="100dp"/>
+
+            <TextView
+                android:id="@+id/TV_Heart_Show_Top"
+                style="@style/commen_top_text_style" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/commen_top_linearlayout_style">
+
+            <TextView
+                android:id="@+id/TV_Speed"
+                style="@style/commen_top_text_style"
+                android:text="@string/Speed"
+                android:layout_marginLeft="118dp"/>
+
+            <TextView
+                android:id="@+id/TV_Speed_Show_Top"
+                style="@style/commen_top_text_style" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

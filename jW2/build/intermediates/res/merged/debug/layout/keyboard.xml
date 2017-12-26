@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ 	
+
+  >
+
+    <RelativeLayout
+        android:id="@+id/RL_Keyboard_Layout"
+        android:layout_width="300dp"
+        android:layout_height="380dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="11dp"
+       
+        android:background="@drawable/keyboard_background" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+           
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/LL_One"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+               
+                android:gravity="left" >
+
+                <Button
+                    android:id="@+id/Btn_One"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:background="@drawable/one" />
+
+                <Button
+                    android:id="@+id/Btn_Two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:background="@drawable/two" />
+
+                <Button
+                    android:id="@+id/Btn_Three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:background="@drawable/three" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LL_Two"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                 >
+
+                <Button
+                    android:id="@+id/Btn_Four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:clickable="false"
+                     android:layout_weight="1"
+                    android:background="@drawable/four" />
+
+                <Button
+                    android:id="@+id/Btn_Five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:clickable="false"
+                     android:layout_weight="1"
+                    android:background="@drawable/five" />
+
+                <Button
+                    android:id="@+id/Btn_Six"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:clickable="false"
+                     android:layout_weight="1"
+                    android:background="@drawable/six" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LL_Three"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                >
+
+                <Button
+                    android:id="@+id/Btn_Seven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:clickable="false"
+                     android:layout_weight="1"
+                    android:background="@drawable/seven" />
+
+                <Button
+                    android:id="@+id/Btn_Eight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:clickable="false"
+                     android:layout_weight="1"
+                    android:background="@drawable/eight" />
+
+                <Button
+                    android:id="@+id/Btn_Nine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:clickable="false"
+                     android:layout_weight="1"
+                    android:background="@drawable/nine" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LL_Four"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+               android:layout_marginLeft="0dp" >
+
+                <Button
+                    android:id="@+id/Btn_Zero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:clickable="false"
+                    android:layout_weight="1"
+                    android:background="@drawable/zero" />
+
+                <Button
+                    android:id="@+id/Btn_Point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:clickable="false"
+                    android:layout_weight="1"
+                    android:background="@drawable/point" />
+
+                <Button
+                    android:id="@+id/Btn_Delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:clickable="false"
+                    android:layout_weight="1"
+                    android:background="@drawable/del" />
+            </LinearLayout>
+            
+            
+            <LinearLayout
+                android:id="@+id/LL_Enter"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+            
+        <Button
+            android:id="@+id/Btn_Enter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:background="@drawable/enter" />
+        
+        </LinearLayout>
+        </LinearLayout>
+
+           
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/set_background_1"
+    android:gravity="center"
+    tools:context=".setActivity" >
+      
+		    <RelativeLayout
+		        android:id="@+id/RL_Set"
+		        android:layout_width="match_parent"
+		        android:layout_height="520dp"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true"
+		        android:gravity="center" >
+		
+		        <ImageButton
+		            android:id="@+id/IB_Av"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignBottom="@+id/ib_set"
+		            android:layout_alignLeft="@+id/IB_explorer"
+		            android:background="@android:color/transparent"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/av" />
+		
+		        <ImageButton
+		            android:id="@+id/ib_mode_now"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:layout_marginRight="32dp"
+		            android:layout_toLeftOf="@+id/ib_movie"
+		            android:background="#00000000"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/mode_now" />
+		        
+		
+		          <ImageButton
+		            android:id="@+id/IB_explorer"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignBottom="@+id/IB_Tv"
+		            android:layout_marginLeft="53dp"
+		            android:layout_toRightOf="@+id/IB_Tv" 
+		             android:background="@drawable/exploer"
+		         />
+		
+		        <ImageButton
+		            android:id="@+id/ib_movie"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignBottom="@+id/ib_mode_now"
+		            android:layout_centerHorizontal="true"
+		            android:background="@android:color/transparent"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/movie" />
+		
+		        <ImageButton
+		            android:id="@+id/IB_Tv"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignBottom="@+id/ib_movie"
+		            android:layout_marginLeft="29dp"
+		            android:layout_toRightOf="@+id/ib_movie"
+		            
+		            android:background="@android:color/transparent"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/tv" />
+		
+		      
+		
+		        <TextView
+		            android:id="@+id/TV_SetPer"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_above="@+id/ib_movie"
+		            android:layout_alignRight="@+id/ib_set"
+		            android:layout_marginBottom="10dp"
+		            android:layout_marginRight="0dp"
+		            android:layout_alignLeft="@+id/ib_set"
+		            android:gravity="center"
+		            android:text="@string/set_per"
+		            android:textColor="#FFFFFF"
+		            android:textSize="30sp" />
+		
+		        <ImageButton
+		            android:id="@+id/ib_usb"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignRight="@+id/ib_movie"
+		            android:layout_alignTop="@+id/ib_set"
+		            android:background="#00000000"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/usb" />
+		
+		        <ImageButton
+		            android:id="@+id/ib_music"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignTop="@+id/IB_Av"
+		            android:layout_toLeftOf="@+id/IB_explorer"
+		            android:background="#00000000"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/mp3" />
+		
+		        <ImageButton
+		            android:id="@+id/ib_set"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		         android:layout_alignTop="@+id/IB_HDMI"
+		            android:layout_alignLeft="@+id/ib_mode_now"
+		           
+		            android:background="#00000000"
+		            android:scaleType="fitXY"
+		            android:src="@drawable/set_per" />
+		        
+		        <ImageButton 
+		            android:id="@+id/IB_HDMI"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_toRightOf="@+id/ib_set"
+		            android:layout_marginLeft="20dp"
+		            android:layout_marginTop="00dp"
+		            android:background="@drawable/hdmi"
+		            />
+				
+		        <TextView 
+		            android:id="@+id/TV_HDMI"
+		              android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		     	   android:layout_alignTop="@+id/TV_SetPer"
+		           android:layout_toRightOf="@+id/ib_set"
+		            android:layout_marginLeft="60dp"
+		            android:text="@string/Hdmi"
+		            android:textColor="#FFFFFF"
+		            android:textSize="30dp"
+		            />
+		        
+		        <TextView
+		            android:id="@+id/TV_USB"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		         android:layout_alignTop="@+id/TV_SetPer"
+		            android:layout_centerHorizontal="true"
+		            android:gravity="center"
+		            android:text="@string/Usb"
+		            android:textColor="#FFFFFF"
+		            android:textSize="30sp" />
+		
+		        <TextView
+		            android:id="@+id/TV_Explorer"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignRight="@+id/ib_movie"
+		            android:layout_alignLeft="@+id/ib_movie"
+		            android:layout_below="@+id/ib_movie"
+		            android:gravity="center"
+		            android:text="@string/Movie"
+		            android:textColor="#FFFFFF"
+		            android:textSize="30sp" 
+		           />
+		
+		        <TextView
+		            android:id="@+id/TV_MP3"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignBottom="@+id/TV_USB"
+		            android:layout_alignRight="@+id/ib_music"
+		         
+		            android:layout_marginRight="25dp"
+		            android:gravity="center"
+		            android:text="@string/Music"
+		            android:textColor="#FFFFFF"
+		            android:textSize="30sp" />
+		
+		        <TextView
+		            android:id="@+id/TV_NowMode"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignBaseline="@+id/TV_Explorer"
+		            android:layout_alignBottom="@+id/TV_Explorer"
+		            android:layout_alignRight="@+id/ib_mode_now"
+		            android:layout_alignLeft="@+id/ib_mode_now"
+		            android:gravity="center"
+		            android:text="@string/Mode_Now"
+		            android:textColor="#FFFFFF"
+		            android:textSize="30sp" />
+		
+		        <TextView
+		            android:id="@+id/TV_Move"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignBaseline="@+id/TV_Explorer"
+		            android:layout_alignBottom="@+id/TV_Explorer"
+		            android:layout_alignRight="@+id/IB_explorer"
+		            android:layout_alignLeft="@+id/IB_explorer"
+		            android:gravity="center"
+		            android:text="@string/Explorer"
+		            android:textColor="#FFFFFF"
+		            android:textSize="30sp" />
+		
+		        <TextView
+		            android:id="@+id/TV_Number"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignBaseline="@+id/TV_MP3"
+		            android:layout_alignBottom="@+id/TV_MP3"
+		            android:layout_alignLeft="@+id/IB_Av"
+		            android:layout_marginLeft="15dp"
+		            android:gravity="center"
+		            android:text="@string/Number_AV"
+		            android:textColor="#FFFFFF"
+		            android:textSize="30sp" />
+		
+		        <TextView
+		            android:id="@+id/TV_Tv"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignBaseline="@+id/TV_Explorer"
+		            android:layout_alignBottom="@+id/TV_Explorer"
+		            android:layout_alignRight="@+id/IB_Tv"
+		            android:layout_alignLeft="@+id/IB_Tv"
+		            android:gravity="center"
+		            android:text="@string/Tv"
+		            android:textColor="#FFFFFF"
+		            android:textSize="30sp" />
+		 
+		 
+		</RelativeLayout>
+      
+</RelativeLayout>

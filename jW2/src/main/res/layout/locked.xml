@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/factory_pattern_background">
+    
+		<RelativeLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent">
+		    
+		    <TextView 
+		        android:id="@+id/TV_lock"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="160dp"
+		        android:textSize="30sp"
+		         android:textColor="#FF0033"
+		        android:text="@string/lock"
+		        />
+		    
+		    <EditText 
+		        android:id="@+id/ET_lock"
+		        android:layout_width="300dp"
+		        android:layout_height="60dp"
+		        android:layout_marginTop="60dp"
+		        android:layout_centerHorizontal="true"
+		        android:layout_below="@+id/TV_lock"/>
+		    
+		    <Button 
+		        android:id="@+id/BT_ok"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:layout_below="@+id/ET_lock"
+		        android:layout_marginTop="80dp"
+		        android:textSize="50sp"
+		        android:text="@string/Confirm"
+		       />
+		</RelativeLayout>
+</RelativeLayout>

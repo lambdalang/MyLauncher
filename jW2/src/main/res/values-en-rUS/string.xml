@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+   <string name="app_name">JW</string>
+    <string name="quick_start">Q.START</string> 
+     <string name="trainSet">TRAINSET</string> 
+     
+      <string name ="Gradient">INCLINE</string>
+    <string name="Time">TIME</string>
+    <string name="timeDefault">30</string>
+    <string name = "DistanceEnglish">DistanceEnglish</string>
+    <string name = "Distance">DISTANCE</string>
+    <string name = "Distance2">DISTANCE</string>
+    <string name = "Heat">CAL</string>
+    <string name="Speed">SPEED</string>
+    <string name="SpeedCircle">SPEED</string>
+    <string name="SpeedEnglish">SpeedEnglish</string>
+     <string name = "Heart">HEARTRATE</string>
+     <string name = "personalConsumptionInformation">Personal consumption information</string>
+     
+         <string name="title_activity_main2" translatable="false">Main2Activity</string>
+    <string name="incline_title">INCLINE</string>
+    <string name="time_title">TIME</string>
+    <string name="incline_unit" translatable="false">N</string>
+    <string name="time_unit" translatable="false">H:M:S</string>
+    <string name="distance_title">DISTANCE</string>
+    <string name="distance_unit" translatable="false">km</string>
+    <string name="calories_title">CALORIE</string>
+    <string name="calories_unit" translatable="false">kCal</string>
+    <string name="heart_rate_title">HEART RATE</string>
+    <string name="heart_rate_unit" translatable="false">Beats/min</string>
+    <string name="speed_title">SPEED</string>
+    <string name="speed_unit" translatable="false">km/h</string>
+    
+     <string name="Age">AGE</string>
+     <string name="ageDefault">35</string>
+     <string name="BoyOrGril">GENDER</string>
+     <string name="Boy">MAN</string>
+      <string name="Height">HEIGHT</string>
+      <string name="heightDefault">168</string>
+      	<string name="Weight">WEIGHT</string>	
+      	 <string name="weightDefault">68</string>
+      <string name="Kg">Kg</string>
+      <string name="M">M</string>
+      <string name="Year">Year</string>    	
+     <string name="Sex">Sex</string>
+    <string name="action_settings">Settings</string>
+     <string name="youHaveNoChoiceModel">You have no choice model !</string>
+    
+     <string name="set_per">PERSONAL SETUP</string>
+     <string name="Movie">MOVIE</string>
+    <string name="Mode_Now">PRESENT MODE</string>
+    <string name="Number_AV">NUMBER AV</string>
+    <string name="MP3">MP3</string>
+      <string name="Music">MUSIC</string>
+    <string name="Explorer">EXPLORER</string>
+     <string name="Tv">TV</string>		
+      <string name="Usb">USB</string>	
+      <string  name="Hdmi">HDMI</string>
+    
+     <string name="Back">BACK</string>    
+    <string name="Confirm">OK</string>
+     <string name="Pause">Pause</string>
+      <string name="Continue">Continue</string>
+     <string name="Stop">STOP</string>
+    <string name="Set">SEETING</string>
+    <string name="GradientNumber">10</string>
+     <string name="GradientUnit">N</string>
+        <string name="SpeedUnit">Km/h</string>
+      
+    <string name = "Hand">MANUAL</string>
+    <string name = "Fluctuate">ROLLING</string>
+    <string name = "Climbing">CLIMB</string>
+    <string name = "Interval">INTERVAL</string>
+    <string name = "LostWeight">WEIGHTLOSS</string>
+    <string name = "Mountion">MOUNTION</string>
+     <string name = "Burn">FAT BURN</string>
+    
+      <string name = "HeartLow">120 times/min</string>
+       <string name = "HeartMid">138 times/min</string>
+        <string name = "HeartHigh">157 times/min</string>
+         
+   <string name="Goal">Goal</string>
+    <string name = "Project">Program</string>
+    <string name="Task">MISSION</string>
+     <string name="Nothing">Nothing</string>
+     
+     <string name="Picture">Picture</string>
+     
+       <string name="Parameter">Parameter Settings</string>
+       <string name="factoryPatternSet">factoryPatternSet</string>
+       <string name="androidPatternSet">androidPatternSet</string>
+        <string name="totalTime">totalTime</string>
+        <string name="totalDistance">totalDistance</string>
+         <string name="SIENG">sieng</string>
+       <string name="minSpeed">minSpeed</string>
+       <string name="maxSpeed">maxSpeed</string>
+       <string name="maxiNCLINE">maxIncline</string>
+       <string name="speedTime">speedTime</string>
+       <string name="whell">whell</string>
+       <string name="autoOil">autoOil</string>
+       <string name="oilTime">oilTime</string>
+       <string name="language">language</string>
+         <string name="addOilNumber">Gas alarm number</string>
+       <string name="addOil">addOil</string>
+        <string name="addOiling">addOiling</string>
+       <string name="generalSet">GENERAL Set</string>
+       <string name="elevator">ELEVATOR</string>
+       <string name="password">PASSWORD</string>
+       <string name="recoverSet">RECOVER SET</string>
+       <string name="exit">EXIT</string>
+        <string name="versions">versions:</string>
+         
+        <string name="setSection">setSection</string>
+        <string name="set">set: </string>
+        <string name="segment">segment</string>
+        <string name="run">run</string>
+        <string name="stepOne">stepOne</string>
+        <string name="stepTwo">stepTwo</string>
+        <string name="reset">reset</string>
+         <string name="stepOneDetectionZero">stepOneDetectionZero</string>
+        <string name="stepOneDetectionOne">stepOneDetectionOne</string>
+        <string name="stepOneDetectionTwo">stepOneDetectionTwo</string>
+         <string name="selfTesting">selfTesting</string>
+        <string name="ok">ok</string>
+        
+        <string name="passwordSet">PASSWORD SET</string>
+        <string name="closePasswordSet">closePasswordSet</string>
+        <string name="openPasswordSet">openPasswordSet</string>
+        <string name="save">save</string>
+        <string name="kilometre">Kilometre</string>
+        <string name="oldPassword">oldPassword: </string>
+        <string name="newPassword">newPassword: </string>
+        
+        <string name="warning">WARNING</string>
+        <string name="refueling">refueling, Please Wait!</string>
+        <string name="number">10</string>
+        <string name="safeguard">safeguard！！</string>
+        
+       <string name="lock" >Treadmill has been locked, please contact with sales</string>
+   	<string-array name = "Array_Sex">
+   	    <item>FEMALE</item>
+   	    <item>MAN</item>
+   	</string-array>
+   	
+   	<string  name="cancle">CANCLE</string>
+   	<string  name="PleaseEnterThePassword">Please enter the password</string>
+   	<string name="prompt">PROMPT</string>
+   	<string name="EnterThePasswordMistake">Enter the password mistake</string>
+   	<string name="TheStandbystateCouldNotEnterTheFactoryPattern">The standby state, could not enter the factory pattern !!</string>  
+   	<string name="PasswordCannotContainLettersPleaseEnterAgain">Password cannot contain letters, please enter again!</string>
+   	<string name="YouWantToDeleteTheDataIsEmpty">You want to delete the data is empty!</string>
+   	<string name="ParameterIsSetSuccessfully">Parameter is set successfully!</string>
+   	<string name="ThisPageDataDoNotSupportTheDecimalPoint">This page data do not support the decimal point!</string>
+	<string  name="ThisDataTypeCannotHaveADecimalPoint">This data type cannot have a decimal point!</string>
+		<string name="PasswordErrorPleaseTryAgain">Password error!Please try again! </string>
+		<string  name="DataIsSuccessfullySaved">Data is successfully saved!</string>
+	
+    <string name="hello_world">Hello world!</string>
+    <string name="ic_main_str_1">LL </string>
+    <string name="ic_main_str_2">ic_main_str_2</string>
+    <string name="ic_main_str_3">ic_main_str_3</string>
+    <string name="ic_main_str_4">ic_main_str_4</string>
+    <string name="ic_main_str_5">ic_main_str_5TV</string>
+    <string name="ic_main_str_6">ic_main_str_6</string>
+    <string name="cant_found_activity">NO FIND</string>
+    <string name="week">WEEK</string>
+    <string name="all_app">ALL APP</string>
+    <string name="pick_wallpaper">pick_wallpaper</string>
+    <string name="wallpaper_instructions">wallpaper_instructions</string>
+    
+    <string name="permlab_read_settings">read Home settings and shortcuts</string>
+    <!-- Permission description -->
+    <string name="permdesc_read_settings">Allows an app to read the settings and
+        shortcuts in Home.</string>
+    <!-- Permission short label -->
+    <string name="permlab_write_settings">write Home settings and shortcuts</string>
+    <!-- Permission description -->
+    <string name="permdesc_write_settings">Allows an app to change the settings and
+        shortcuts in Home.</string>
+        
+</resources>

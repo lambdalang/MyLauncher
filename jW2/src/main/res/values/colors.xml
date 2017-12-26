@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="slide_btn_on">#7FFF00</color>
+	<color name="slide_btn_off">#FFFF00</color>
+	<color name="slide_btn_thumb">#000000</color>
+	<color name="outline_color">#FFFFFFFF</color>
+</resources>

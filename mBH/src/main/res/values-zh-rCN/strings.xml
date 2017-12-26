@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="str_please_input_password">请输入密码</string>
+    <string name="str_cancel">取消</string>
+    <string name="str_confirm">确定</string>
+    <string name="str_prompt">提示</string>
+    <string name="str_input_password_error">输入密码错误</string>
+    <string name="str_boy">男</string>
+    <string name="Kcal">Kcal</string>
+    <string name="str_girl">女</string>
+    <string name="str_number_out">数据超出最大值，已使用最大值</string>
+    <string name="str_number_error">输入数据有误，请重新输入!</string>
+    <string name="str_data_lenght_out">数据长度超出范围！</string>
+    <string name="str_old_password_error">旧密码错误,请重新输入！！</string>
+    <string name="str_tishi">提示</string>
+    <string name="str_password_uadata">密码已修改成功！！</string>
+    <string name="str_new_password_null">新密码不能为空或为0！</string>
+</resources>

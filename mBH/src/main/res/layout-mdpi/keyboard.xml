@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="700dp">
+
+    <RelativeLayout
+        android:id="@+id/RL_Keyboard_Layout"
+        android:layout_width="270dp"
+        android:layout_height="425dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/keyboard_background"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="270dp"
+            android:layout_height="320dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="237dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="30sp">
+
+                <Button
+                    android:id="@+id/Btn_One"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/one_seletor"
+
+                    />
+
+                <Button
+                    android:id="@+id/Btn_Two"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/two_seletor" />
+
+                <Button
+                    android:id="@+id/Btn_Three"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/three_seletor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="237dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="30sp">
+
+                <Button
+                    android:id="@+id/Btn_Four"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/four_seletor" />
+
+                <Button
+                    android:id="@+id/Btn_Five"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/five_seletor" />
+
+                <Button
+                    android:id="@+id/Btn_Six"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/six_seletor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="237dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="30sp">
+
+                <Button
+                    android:id="@+id/Btn_Seven"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/seven_seletor" />
+
+                <Button
+                    android:id="@+id/Btn_Eight"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/eight_seletor" />
+
+                <Button
+                    android:id="@+id/Btn_Nine"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/nine_seletor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="237dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="30sp">
+
+                <Button
+                    android:id="@+id/Btn_Zero"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+
+                    android:background="@drawable/zero_seletor" />
+
+                <Button
+                    android:id="@+id/Btn_Point"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/point_seletor" />
+
+                <Button
+                    android:id="@+id/Btn_Delete"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/del_seletor" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Btn_Enter"
+            android:layout_width="270dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/enter_seletor" />
+    </RelativeLayout>
+
+</RelativeLayout>

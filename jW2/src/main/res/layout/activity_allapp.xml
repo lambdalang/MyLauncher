@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/allapp_background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include layout="@layout/notification_bar" />
+
+    <TextView
+        android:id="@+id/tv_focus_position"
+        style="@style/normal_size"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="68.0dip"
+        android:layout_marginTop="175.0dip"
+        android:textColor="#ffffffff"
+        android:textSize="21.0dip" />
+
+    <ImageView
+        style="@style/normal_size"
+        android:layout_marginLeft="66.0dip"
+        android:layout_marginTop="40.0dip"
+        android:src="@drawable/internal_all_app_logo" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/normal_size"
+        android:layout_marginLeft="186.0dip"
+        android:layout_marginTop="80.0dip"
+        android:gravity="center_horizontal"
+        android:text="@string/all_app"
+        android:textColor="@android:color/white"
+        android:textSize="40.0dip" />
+
+    <TextView 
+        android:id="@+id/TV_Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:text="@string/Back"
+        android:textSize="60sp"
+        android:layout_centerHorizontal="true"/>
+    
+    <ImageView
+        style="@style/normal_size"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="148.0dip"
+        android:src="@drawable/title_line" />
+
+    <RelativeLayout
+        android:layout_width="1146.0dip"
+        android:layout_height="474.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50.0dip"
+        android:padding="20.0dip" >
+
+        <GridView
+            android:id="@+id/all_app_gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:columnWidth="136.0dip"
+            android:horizontalSpacing="27.0dip"
+            android:listSelector="@drawable/item_focus_white"
+            android:numColumns="7"
+            android:scrollbars="none"
+            android:verticalSpacing="10.0dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

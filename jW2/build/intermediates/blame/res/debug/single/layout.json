@@ -1,0 +1,246 @@
+[
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\distance.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\distance.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\time.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\time.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\menu_common.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\menu_common.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\activity_usb.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\activity_usb.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\activity_set.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\activity_set.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\listview_music.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\listview_music.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\hot.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\hot.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\cities_holo_layout.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\cities_holo_layout.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\activity_nowmode_heart.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\activity_nowmode_heart.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\password_close.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\password_close.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\activity_nowmode_project.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\activity_nowmode_project.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\progress_bars_item.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\progress_bars_item.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\activity_task.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\activity_task.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\activity_usb_music.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\activity_usb_music.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\commen_top.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\commen_top.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\warning.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\warning.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\locked.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\locked.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\activity_allapp.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\activity_allapp.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_include.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_activity_chooser_view_include.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_tabbar.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_action_bar_tabbar.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\activity_nowmode_goal.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\activity_nowmode_goal.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\common_gridview_item.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\common_gridview_item.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_action_mode_close_item.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\consumption_information.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\consumption_information.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\bottomline.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\bottomline.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\city_holo_layout.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\city_holo_layout.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\movie_fragment.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\movie_fragment.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\keyboard.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\keyboard.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\explorer_fragment.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\explorer_fragment.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\activity_home.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\big_container.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\big_container.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_tab.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_action_bar_tab.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ser_per.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\activity_ser_per.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\gridview_item.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\gridview_item.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\notification_bar.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\notification_bar.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_decor_include.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_action_bar_decor_include.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\password_open.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\password_open.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\extra_view.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\extra_view.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_decor_overlay.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_action_bar_decor_overlay.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\factorypatternset.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\factorypatternset.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\parameter_set.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\parameter_set.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\activity_count_down.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\activity_count_down.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\factorypatternset_elevator.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\src\\main\\res\\layout\\factorypatternset_elevator.xml"
+    },
+    {
+        "merged": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_home.xml",
+        "source": "F:\\Tufer_workspace\\MyLauncher\\jW2\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\19.1.0\\res\\layout\\abc_action_bar_home.xml"
+    }
+]

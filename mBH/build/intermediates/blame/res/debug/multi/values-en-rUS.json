@@ -1,0 +1,292 @@
+[
+    {
+        "outputFile": "F:\\Tufer_workspace\\MyLauncher\\mBH\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rUS\\values-en-rUS.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 37,
+                    "endOffset": 88
+                },
+                "from": {
+                    "file": "F:\\Tufer_workspace\\MyLauncher\\mBH\\src\\main\\res\\values-en-rUS\\strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 348,
+                        "endColumn": 37,
+                        "endOffset": 381
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 93,
+                    "endColumn": 37,
+                    "endOffset": 126
+                },
+                "from": {
+                    "file": "F:\\Tufer_workspace\\MyLauncher\\mBH\\src\\main\\res\\values-en-rUS\\strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 309,
+                        "endColumn": 37,
+                        "endOffset": 342
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 131,
+                    "endColumn": 41,
+                    "endOffset": 168
+                },
+                "from": {
+                    "file": "F:\\Tufer_workspace\\MyLauncher\\mBH\\src\\main\\res\\values-en-rUS\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 118,
+                        "endColumn": 41,
+                        "endOffset": 155
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 173,
+                    "endColumn": 42,
+                    "endOffset": 211
+                },
+                "from": {
+                    "file": "F:\\Tufer_workspace\\MyLauncher\\mBH\\src\\main\\res\\values-en-rUS\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 161,
+                        "endColumn": 42,
+                        "endOffset": 199
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 216,
+                    "endColumn": 57,
+                    "endOffset": 269
+                },
+                "from": {
+                    "file": "F:\\Tufer_workspace\\MyLauncher\\mBH\\src\\main\\res\\values-en-rUS\\strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 546,
+                        "endColumn": 57,
+                        "endOffset": 599
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 274,
+                    "endColumn": 38,
+                    "endOffset": 308
+                },
+                "from": {
+                    "file": "F:\\Tufer_workspace\\MyLauncher\\mBH\\src\\main\\res\\values-en-rUS\\strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 387,
+                        "endColumn": 38,
+                        "endOffset": 421
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 313,
+                    "endColumn": 59,
+                    "endOffset": 368
+                },
+                "from": {
+                    "file": "F:\\Tufer_workspace\\MyLauncher\\mBH\\src\\main\\res\\values-en-rUS\\strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 248,
+                        "endColumn": 59,
+                        "endOffset": 303
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 373,
+                    "endColumn": 61,
+                    "endOffset": 430
+                },
+                "from": {
+                    "file": "F:\\Tufer_workspace\\MyLauncher\\mBH\\src\\main\\res\\values-en-rUS\\strings.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 772,
+                        "endColumn": 61,
+                        "endOffset": 829
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 435,
+                    "endColumn": 58,
+                    "endOffset": 489
+                },
+                "from": {
+                    "file": "F:\\Tufer_workspace\\MyLauncher\\mBH\\src\\main\\res\\values-en-rUS\\strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 486,
+                        "endColumn": 58,
+                        "endOffset": 540
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 494,
+                    "endColumn": 57,
+                    "endOffset": 547
+                },
+                "from": {
+                    "file": "F:\\Tufer_workspace\\MyLauncher\\mBH\\src\\main\\res\\values-en-rUS\\strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 427,
+                        "endColumn": 57,
+                        "endOffset": 480
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 552,
+                    "endColumn": 64,
+                    "endOffset": 612
+                },
+                "from": {
+                    "file": "F:\\Tufer_workspace\\MyLauncher\\mBH\\src\\main\\res\\values-en-rUS\\strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 605,
+                        "endColumn": 64,
+                        "endOffset": 665
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 617,
+                    "endColumn": 57,
+                    "endOffset": 670
+                },
+                "from": {
+                    "file": "F:\\Tufer_workspace\\MyLauncher\\mBH\\src\\main\\res\\values-en-rUS\\strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 713,
+                        "endColumn": 57,
+                        "endOffset": 766
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 675,
+                    "endColumn": 59,
+                    "endOffset": 730
+                },
+                "from": {
+                    "file": "F:\\Tufer_workspace\\MyLauncher\\mBH\\src\\main\\res\\values-en-rUS\\strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 57,
+                        "endColumn": 59,
+                        "endOffset": 112
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 735,
+                    "endColumn": 41,
+                    "endOffset": 772
+                },
+                "from": {
+                    "file": "F:\\Tufer_workspace\\MyLauncher\\mBH\\src\\main\\res\\values-en-rUS\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 205,
+                        "endColumn": 41,
+                        "endOffset": 242
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 777,
+                    "endColumn": 40,
+                    "endOffset": 813
+                },
+                "from": {
+                    "file": "F:\\Tufer_workspace\\MyLauncher\\mBH\\src\\main\\res\\values-en-rUS\\strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 671,
+                        "endColumn": 40,
+                        "endOffset": 707
+                    }
+                }
+            }
+        ]
+    }
+]

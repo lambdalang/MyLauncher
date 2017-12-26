@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/set_background" >
+           
+     <include android:id="@+id/Keyboard" layout="@layout/keyboard" />
+     <include android:id="@+id/Time" layout="@layout/time" />
+	<include android:id="@+id/Hot" layout="@layout/hot" />
+	<include android:id="@+id/Distance" layout="@layout/distance" />  
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="700dp"
+        android:layout_height="520dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/TV_Weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TV_Height"
+            android:layout_alignBottom="@+id/TV_Height"
+            android:layout_alignLeft="@+id/TV_Weight_Show"
+            android:layout_alignRight="@+id/TV_Weight_Show"
+            android:gravity="center"
+            android:text="@string/Weight"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/TV_Age_Show"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignTop="@+id/Sex"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/TV_Height_Show"
+            android:background="@drawable/height_background"
+            android:clickable="true"
+            android:gravity="center"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/TV_Height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TV_Age"
+            android:layout_alignBottom="@+id/TV_Age"
+            android:layout_alignRight="@+id/TV_Height_Show"
+            android:layout_alignLeft="@+id/TV_Height_Show"
+            android:gravity="center"
+            android:text="@string/Height"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <!--  
+        <kankan.wheel.widget.WheelView
+           
+            android:id="@+id/Sex"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="200dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/TV_Age_Show"
+            android:background="#FFFFFF" 
+            
+           />
+-->
+        <TextView 
+             android:id="@+id/Sex"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="200dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/TV_Age_Show"
+            android:textSize="30sp"
+            android:gravity="center"
+           android:background="@drawable/height_background"/>
+        
+        <TextView
+            android:id="@+id/TV_SetPer"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/set_per"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/TV_Weight_Show"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:layout_alignRight="@+id/TV_SetPer"
+            android:layout_alignTop="@+id/TV_Height_Show"
+            android:background="@drawable/height_background"
+            android:clickable="true"
+            android:gravity="center"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/TV_Height_Show"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/TV_Sex"
+            android:layout_toLeftOf="@+id/TV_SetPer"
+            android:background="@drawable/height_background"
+            android:clickable="true"
+            android:gravity="center"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/TV_Sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Sex"
+            android:layout_alignLeft="@+id/Sex"
+            android:layout_marginBottom="56dp"
+            android:layout_marginLeft="18dp"
+            android:text="@string/Sex"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/TV_Age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TV_Sex"
+            android:layout_alignBottom="@+id/TV_Sex"
+            android:layout_alignRight="@+id/TV_Age_Show"
+            android:layout_alignLeft="@+id/TV_Age_Show"
+            android:gravity="center"
+            android:text="@string/Age"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <TextView 
+        android:id="@+id/TV_confirm"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/relativeLayout1"
+      	    android:layout_marginTop="100dp"
+            android:layout_marginLeft="60dp"
+            android:gravity="center"
+              android:text="@string/Confirm"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp" 
+        />
+</RelativeLayout>
